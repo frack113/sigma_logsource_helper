@@ -1,0 +1,4 @@
+id,Question,product,categorie,service
+1,Do you have sysmon rule for eventid 1 process Creation,windows,process_creation,
+2,Audit policy PowerShell 'Script Block Logging' is enable,windows,ps_script,
+3,powershell channel logging is enable,windows,,powershell-classic

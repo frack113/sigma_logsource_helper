@@ -1,0 +1,8 @@
+    q_linux:
+        type: question_select
+        question: Do you have
+        value:
+            - Sysmon for linux
+            - Laurel
+            - Auditd
+            - None of them

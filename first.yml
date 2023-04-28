@@ -1,0 +1,14 @@
+general:
+    type: question_select
+    question: Do you have
+    value_type: multi
+    value: 
+        - Linux
+        - Windows
+        - Macos 
+    link_type: file
+    link:
+        - q_linux
+        - windows.yml
+
+
