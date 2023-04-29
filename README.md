@@ -8,36 +8,16 @@ These are questions for selecting the right logsource according to the available
 There is no engine 
 And it's a POC, an idea 
 
-# Yaml 
+# logsource Yaml 
 
-Create the list of question
-```yaml
-    q_windows:
-        type: question_select
-        question: // text of the question
-        value_type: multi or simple selection
-        value:
-            - // text1
-            - // text2
-        link_type: question or file
-        link:
-            - list of question for test1
-            - list of question for test2
-```
+There are 2 parts in the file
 
-Create the list of logsource
-```yaml
-    q_symon_w1:
-        type: logsource_select
-        question: // text of the question
-        value:
-            - Yes
-            - No
-        link_type: logsource
-        link:
-            - list of logsource for Yes
-```
+- logsources : all the logsource found in the rules
+- questions : a boolean question to take the list of logsource
 
-# Csv
+`fhash` for "frack Hash" , is a way to check logsource with a simple string.
+It is not pretty but it's works
 
-WIP 
+# Missing
+
+Add a file or a part to select only the correct questions to ask.

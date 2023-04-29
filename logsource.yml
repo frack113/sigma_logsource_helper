@@ -1,0 +1,1100 @@
+logsources:
+    f8c97900-ab0b-43c2-a979-173d67ed7ec5:
+        product: django
+        category: application
+        service: none
+    4a25e208-4cc7-4c7e-8782-37418172e38b:
+        product: jvm
+        category: application
+        service: none
+    d1d6d310-c483-4fbb-828a-05098611d32e:
+        product: nodejs
+        category: application
+        service: none
+    54d71783-12ee-496c-bd1e-a99fa6a1c997:
+        product: python
+        category: application
+        service: none
+    f7bea8d6-b0bb-47f7-9a32-df34663af77c:
+        product: rpc_firewall
+        category: application
+        service: none
+    be1b8c44-8835-460f-90fb-f970ed9d0792:
+        product: ruby_on_rails
+        category: application
+        service: none
+    693409fa-cc18-4a23-8873-994d7381cedc:
+        product: spring
+        category: application
+        service: none
+    dbcca761-853e-4ab0-913b-87d1cb7c3124:
+        product: sql
+        category: application
+        service: none
+    d5f301f5-1f0e-4b47-b721-edb7e10fcf0e:
+        product: velocity
+        category: application
+        service: none
+    1ec9f408-2d96-42e4-8161-c2e79d04cb87:
+        product: none
+        category: antivirus
+        service: none
+    ade5df9f-d676-44f9-8bb2-2d3df33a2982:
+        product: none
+        category: database
+        service: none
+    b0fb5e51-de11-4317-bd37-764fae49a6f0:
+        product: aws
+        category: none
+        service: cloudtrail
+    ae78453a-ae4e-4a25-8136-2bac5c361398:
+        product: azure
+        category: none
+        service: azureactivity
+    19cd032c-e982-4ac8-a255-59cc1497d9d8:
+        product: azure
+        category: none
+        service: auditlogs
+    57ffca97-62b3-4630-ad3c-e92d6d59b5ea:
+        product: azure
+        category: none
+        service: signinlogs
+    ca136989-060a-40f8-9166-8e05136d5e41:
+        product: azure
+        category: none
+        service: activitylogs
+    aa344956-befb-4652-8503-6171c0db7ecb:
+        product: gcp
+        category: none
+        service: gcp.audit
+    81f70ef6-eac4-4ce9-875a-21444b7f0cea:
+        product: github
+        category: none
+        service: audit
+    723d1db5-6d16-465a-a34b-adfe4d0a3f2e:
+        product: google_workspace
+        category: none
+        service: google_workspace.admin
+    1b085ae7-68a7-4214-83a9-6c83f066ce21:
+        product: m365
+        category: none
+        service: threat_management
+    9d54153c-8432-4f9f-9dc7-3895ddda52be:
+        product: m365
+        category: none
+        service: threat_detection
+    68cbcaf6-29a0-44f6-bd8f-ccc6e9098040:
+        product: m365
+        category: none
+        service: exchange
+    a174551e-dc1c-42f8-8695-4aec79ec712b:
+        product: okta
+        category: none
+        service: okta
+    93cbebf6-fb23-499f-bcdb-91230afe4726:
+        product: onelogin
+        category: none
+        service: onelogin.events
+    93bbe5f9-f704-4705-8ae5-bf09f3342dc7:
+        product: qualys
+        category: none
+        service: none
+    77d595e8-4413-43cc-a161-8ce0f68b8dd2:
+        product: none
+        category: none
+        service: netflow
+    574175b5-fe78-4d52-ad54-926968a8a530:
+        product: linux
+        category: none
+        service: auditd
+    8051bb27-febf-460e-bf85-248477f9a95d:
+        product: linux
+        category: none
+        service: none
+    8fb39e50-277a-47ee-a4a9-311051016b31:
+        product: linux
+        category: none
+        service: auth
+    04a0ee0b-aa5a-4723-bac2-3521e02e4ca1:
+        product: linux
+        category: none
+        service: clamav
+    b4b938e2-10b0-4eec-bb16-bd5e44e6c725:
+        product: linux
+        category: none
+        service: cron
+    e589c429-1dd2-48d1-8628-af6c536ca2fc:
+        product: linux
+        category: none
+        service: guacamole
+    fc86fdf0-6961-40e0-a45f-ee611112ac7c:
+        product: linux
+        category: none
+        service: sshd
+    8de1679f-d452-4ed9-9691-f74ed29b031e:
+        product: linux
+        category: none
+        service: sudo
+    201d3fcd-7470-4a13-af53-bdd02768e66e:
+        product: linux
+        category: none
+        service: syslog
+    71cc6c0c-d95d-4c79-8f79-b35f1f2620c5:
+        product: linux
+        category: none
+        service: vsftpd
+    e9d799b8-49ab-43ca-9670-48cc9ab6988a:
+        product: linux
+        category: file_event
+        service: none
+    77fb9b22-f89b-48b1-8504-1606d5fc9f03:
+        product: linux
+        category: network_connection
+        service: none
+    597a5a3a-2cee-4064-bf0f-7a22f35b1e2c:
+        product: linux
+        category: process_creation
+        service: none
+    864d24e3-f55c-4dc6-967e-4453f75c90b2:
+        product: macos
+        category: file_event
+        service: none
+    b6d283a0-59e1-4bf9-952d-35728c31e8b9:
+        product: macos
+        category: process_creation
+        service: none
+    8e881b75-4d3d-4fe7-bf3f-71428e1167f3:
+        product: cisco
+        category: accounting
+        service: aaa
+    c9d3b39f-4983-4d1a-bf6d-611e6cd9a19a:
+        product: cisco
+        category: none
+        service: aaa
+    b8aa6586-764a-4640-a3fe-024140cce597:
+        product: cisco
+        category: none
+        service: bgp
+    7c8fe139-487e-46e5-878e-f33018f55bc4:
+        product: cisco
+        category: none
+        service: ldp
+    dc4afbc9-7b1d-4337-8329-6ab7b2db6b08:
+        product: none
+        category: dns
+        service: none
+    b1b50bb8-457f-4f1b-a4c6-ba0823323d3a:
+        product: none
+        category: firewall
+        service: none
+    e613739d-a8d3-4acf-80e2-58a7b8a01541:
+        product: huawei
+        category: none
+        service: bgp
+    9b346ca7-f2a1-4cb4-8c35-eed7e3c00c0a:
+        product: juniper
+        category: none
+        service: bgp
+    6dce903b-98f0-401d-bbf4-31da1ad89d12:
+        product: zeek
+        category: none
+        service: dce_rpc
+    3899b7e3-86a3-4b2e-8796-978a7ccdf975:
+        product: zeek
+        category: none
+        service: smb_files
+    b23e2e30-2c63-4283-b4b2-ccd1aac0933f:
+        product: zeek
+        category: none
+        service: x509
+    88aec8d0-2c00-44ff-a920-3582719c3d7e:
+        product: zeek
+        category: none
+        service: dns
+    80442537-63af-47b0-8ade-5d4ded718ec1:
+        product: zeek
+        category: none
+        service: http
+    a4e5fe33-a360-416c-8829-eb531d8b3dd8:
+        product: zeek
+        category: none
+        service: rdp
+    1ee4fb67-f7b3-4bed-8778-950e6e71bb56:
+        product: zeek
+        category: none
+        service: kerberos
+    2a4dc3f5-2f94-4d4d-aac7-7736464676c4:
+        product: none
+        category: none
+        service: apache
+    21f785d2-4e1b-4d88-8f40-48b94f104a04:
+        product: none
+        category: proxy
+        service: none
+    73965e93-11ea-4faa-bea1-8bf4b75c2d6e:
+        product: none
+        category: webserver
+        service: none
+    5ab25500-4785-40d7-b07d-c8a177c61184:
+        product: windows
+        category: none
+        service: iis
+    73892606-c0f3-4a4c-ad78-e4ff011389fb:
+        product: windows
+        category: none
+        service: none
+    5164465d-17ea-450a-9080-699a33c5b659:
+        product: windows
+        category: none
+        service: application
+    c3e821d5-085c-44aa-aa39-faeebf7b0b2d:
+        product: windows
+        category: none
+        service: applocker
+    37add74a-0c64-432d-869e-c7534f38bd53:
+        product: windows
+        category: none
+        service: appmodel-runtime
+    5f2c65c3-d12a-4f7d-9ea3-8c228813efc2:
+        product: windows
+        category: none
+        service: appxdeployment-server
+    7bfb66b3-84a0-4036-87ba-eb06e756668f:
+        product: windows
+        category: none
+        service: appxpackaging-om
+    9973c4b6-7b8b-47eb-8124-aa13916511a8:
+        product: windows
+        category: none
+        service: bits-client
+    2078b9a9-2fe4-4040-b739-83ca0e4e91bb:
+        product: windows
+        category: none
+        service: codeintegrity-operational
+    86aaa8f4-ce91-4e15-8be5-755e920b1166:
+        product: windows
+        category: none
+        service: diagnosis-scripted
+    5a78ec6f-f646-44c6-9eb7-f7eff20efec3:
+        product: windows
+        category: none
+        service: dns-client
+    f6c5b70e-f227-48aa-8bcf-863ca0dc3735:
+        product: windows
+        category: none
+        service: dns-server
+    53c9e882-02bb-498f-b6e1-7337297d0cbf:
+        product: windows
+        category: none
+        service: dns-server-analytic
+    3873e9b1-f931-4637-a3aa-5f95013b637a:
+        product: windows
+        category: none
+        service: driver-framework
+    b87e009f-8aad-4653-84d3-e299353febd5:
+        product: windows
+        category: none
+        service: firewall-as
+    9211671a-e9c7-442d-a374-5fe7b7c1ee2c:
+        product: windows
+        category: none
+        service: ldap_debug
+    82fdfb2e-d018-48f5-a435-e9eb1e5a9766:
+        product: windows
+        category: none
+        service: lsa-server
+    86188b27-d799-4742-b769-a930fa341471:
+        product: windows
+        category: none
+        service: msexchange-management
+    55a1b2cd-5cfe-4af1-8659-7e13f5625326:
+        product: windows
+        category: none
+        service: ntlm
+    88279619-5a5c-4cc9-9f82-75f48fa4159f:
+        product: windows
+        category: none
+        service: openssh
+    73853467-79a3-4299-8aa2-51ce79163e53:
+        product: windows
+        category: none
+        service: printservice-admin
+    15924f62-160e-45a9-b44e-a0e425221556:
+        product: windows
+        category: none
+        service: printservice-operational
+    3c70dec3-ff8d-4774-8806-17bacc280dea:
+        product: windows
+        category: none
+        service: security
+    8167a06b-52fb-4dae-87e3-4b4cd60ca7af:
+        product: windows
+        category: none
+        service: security-mitigations
+    19da40b6-4311-4be3-bfcd-69bd37a4e71e:
+        product: windows
+        category: none
+        service: microsoft-servicebus-client
+    2181dc25-4623-467f-91f9-dd6ff0fc963f:
+        product: windows
+        category: none
+        service: shell-core
+    05388908-6d27-440a-b062-70f7efce6523:
+        product: windows
+        category: none
+        service: smbclient-connectivity
+    0e011007-8980-4f11-8000-d64e6581197c:
+        product: windows
+        category: none
+        service: smbclient-security
+    45f05cf4-15a5-49fa-9545-ae906f3c611f:
+        product: windows
+        category: none
+        service: system
+    7f55971a-344f-4db3-bf11-877182a63238:
+        product: windows
+        category: none
+        service: taskscheduler
+    660d3bdb-480f-4334-ab37-44cda374238b:
+        product: windows
+        category: none
+        service: terminalservices-localsessionmanager
+    7e7ac225-9279-4eee-977f-7749d4aa2cd4:
+        product: windows
+        category: none
+        service: windefend
+    576e9bb3-78a1-4a1f-b39b-c982c9dd6be5:
+        product: windows
+        category: none
+        service: wmi
+    34e77bf0-828d-48e9-9235-e33022a6e5c6:
+        product: windows
+        category: create_remote_thread
+        service: none
+    e67afb71-dfee-4999-86a9-bb7915b1db47:
+        product: windows
+        category: create_stream_hash
+        service: none
+    d7d28800-e807-413e-8748-103b2f4853ce:
+        product: windows
+        category: dns_query
+        service: none
+    37445e58-106f-4ba7-adc8-645f2674edd7:
+        product: windows
+        category: driver_load
+        service: none
+    aab568cd-60be-4480-bad7-5009046284b4:
+        product: windows
+        category: file_access
+        service: none
+    0d9639e2-f7e7-4f64-8120-f6d4d15a8906:
+        product: windows
+        category: file_change
+        service: none
+    8529cfb7-d129-457b-a07c-a009165b0678:
+        product: windows
+        category: file_delete
+        service: none
+    33ef6925-0c28-4c0c-a983-630122c5eb2c:
+        product: windows
+        category: file_event
+        service: none
+    542e5289-140b-4698-98d0-f1af114e74dc:
+        product: windows
+        category: file_rename
+        service: none
+    2d07dc80-bb8b-4e35-936d-3c42ae5aa25c:
+        product: windows
+        category: image_load
+        service: none
+    aa6f3ced-4e85-44ec-81fc-5b1df56e8a02:
+        product: windows
+        category: network_connection
+        service: none
+    5ced34a3-c8b7-482f-91ed-2378bd22dd20:
+        product: windows
+        category: pipe_created
+        service: none
+    0e66b785-cdd5-4d74-b2bd-b78457690ff6:
+        product: windows
+        category: ps_classic_start
+        service: none
+    d42a46b3-f4e3-4946-9dc5-e24b39e1274f:
+        product: windows
+        category: none
+        service: powershell-classic
+    af303560-1534-4482-aebe-e936d84b705f:
+        product: windows
+        category: ps_classic_provider_start
+        service: none
+    6e172a97-77f2-427a-9068-c51f1883c5f6:
+        product: windows
+        category: ps_module
+        service: none
+    2a503beb-86f2-4042-8c45-ce03a9973dd4:
+        product: windows
+        category: ps_script
+        service: none
+    2afdb8e7-914d-4865-a1ad-fbd4c9efe7fc:
+        product: windows
+        category: process_access
+        service: none
+    6fb091f9-c006-4533-87b5-a9ee9209234c:
+        product: windows
+        category: process_creation
+        service: none
+    146abafa-f8c7-423e-b36f-04a27a470039:
+        product: windows
+        category: raw_access_thread
+        service: none
+    466a4902-5fab-4790-a869-cd5e2f115339:
+        product: windows
+        category: registry_add
+        service: none
+    ffb62e81-6913-48f2-b593-9f39c03bf9b0:
+        product: windows
+        category: registry_delete
+        service: none
+    72fe9ddb-ed4a-4e27-9094-4d5241e1de8c:
+        product: windows
+        category: registry_event
+        service: none
+    cea697ab-6ea8-462e-8024-221934e1ef40:
+        product: windows
+        category: registry_set
+        service: none
+    4ff2b5b4-45c2-4ebb-846d-bea12146aa44:
+        product: windows
+        category: none
+        service: sysmon
+    f6ec5a40-ceee-4f82-b046-3c39a8eb5c2d:
+        product: windows
+        category: sysmon_error
+        service: none
+    c94ffd84-8ba8-4fd5-a2c4-b57c393b3bbb:
+        product: windows
+        category: sysmon_status
+        service: none
+    ad69eda0-cdd0-49be-9508-e0e7a12cf108:
+        product: windows
+        category: file_block
+        service: none
+    559b46f7-c777-4307-9871-8a603b7af4eb:
+        product: windows
+        category: process_tampering
+        service: none
+    bff81fba-1eb2-432a-9ffc-ab68492731fc:
+        product: windows
+        category: wmi_event
+        service: none
+questions:
+    716d9db2-c3bb-4680-ad84-6d52ed2520d6:
+        fhash: django_application_none
+        ask: Missing information to ask
+        logsource:
+            - f8c97900-ab0b-43c2-a979-173d67ed7ec5
+    c02c7e05-48e4-4680-a2f4-9232d65f504e:
+        fhash: jvm_application_none
+        ask: Missing information to ask
+        logsource:
+            - 4a25e208-4cc7-4c7e-8782-37418172e38b
+    5e1d3bfc-b836-463e-b23d-b37d7569908f:
+        fhash: nodejs_application_none
+        ask: Missing information to ask
+        logsource:
+            - d1d6d310-c483-4fbb-828a-05098611d32e
+    b125078b-9134-4f85-a755-5ec912c8b9fa:
+        fhash: python_application_none
+        ask: Missing information to ask
+        logsource:
+            - 54d71783-12ee-496c-bd1e-a99fa6a1c997
+    b5172c5c-671f-41d9-b814-4848e16b2760:
+        fhash: rpc_firewall_application_none
+        ask: Missing information to ask
+        logsource:
+            - f7bea8d6-b0bb-47f7-9a32-df34663af77c
+    f69d1d34-d600-45c9-9f97-535ffd37b96c:
+        fhash: ruby_on_rails_application_none
+        ask: Missing information to ask
+        logsource:
+            - be1b8c44-8835-460f-90fb-f970ed9d0792
+    6c1eee05-663c-4ed1-b6bd-aead169916ad:
+        fhash: spring_application_none
+        ask: Missing information to ask
+        logsource:
+            - 693409fa-cc18-4a23-8873-994d7381cedc
+    5ceb59c0-5916-4886-ba34-70131e745fd0:
+        fhash: sql_application_none
+        ask: Missing information to ask
+        logsource:
+            - dbcca761-853e-4ab0-913b-87d1cb7c3124
+    6598a05d-ea08-4c45-a84b-fda2a19e0e15:
+        fhash: velocity_application_none
+        ask: Missing information to ask
+        logsource:
+            - d5f301f5-1f0e-4b47-b721-edb7e10fcf0e
+    b08047b9-f5d3-4851-8360-7e55efc955af:
+        fhash: none_antivirus_none
+        ask: Missing information to ask
+        logsource:
+            - 1ec9f408-2d96-42e4-8161-c2e79d04cb87
+    94fe0506-2957-4cde-8842-b612f856d279:
+        fhash: none_database_none
+        ask: Missing information to ask
+        logsource:
+            - ade5df9f-d676-44f9-8bb2-2d3df33a2982
+    e6564297-e495-4eb1-9e34-91d55e35d446:
+        fhash: aws_none_cloudtrail
+        ask: Missing information to ask
+        logsource:
+            - b0fb5e51-de11-4317-bd37-764fae49a6f0
+    f5d53104-7630-4d2d-bb61-8365432de31b:
+        fhash: azure_none_azureactivity
+        ask: Missing information to ask
+        logsource:
+            - ae78453a-ae4e-4a25-8136-2bac5c361398
+    33a71220-2b48-4aef-80bc-177cc90cf92f:
+        fhash: azure_none_auditlogs
+        ask: Missing information to ask
+        logsource:
+            - 19cd032c-e982-4ac8-a255-59cc1497d9d8
+    148c04f3-b570-4329-b7ed-c68c64b67819:
+        fhash: azure_none_signinlogs
+        ask: Missing information to ask
+        logsource:
+            - 57ffca97-62b3-4630-ad3c-e92d6d59b5ea
+    63bc3459-e0a9-463d-bc2d-bae54522d018:
+        fhash: azure_none_activitylogs
+        ask: Missing information to ask
+        logsource:
+            - ca136989-060a-40f8-9166-8e05136d5e41
+    aee5b6f9-5112-4a74-bc8f-ffa821243751:
+        fhash: gcp_none_gcp.audit
+        ask: Missing information to ask
+        logsource:
+            - aa344956-befb-4652-8503-6171c0db7ecb
+    381293df-6100-4fc8-8260-262bf9e9605d:
+        fhash: github_none_audit
+        ask: Missing information to ask
+        logsource:
+            - 81f70ef6-eac4-4ce9-875a-21444b7f0cea
+    330be6c8-36e0-4bad-89ce-a650f8886a29:
+        fhash: google_workspace_none_google_workspace.admin
+        ask: Missing information to ask
+        logsource:
+            - 723d1db5-6d16-465a-a34b-adfe4d0a3f2e
+    0f5dc751-064b-4d9d-b7b6-ca8885e305c8:
+        fhash: m365_none_threat_management
+        ask: Missing information to ask
+        logsource:
+            - 1b085ae7-68a7-4214-83a9-6c83f066ce21
+    b6cd0eb0-6073-4af2-90bb-eddd59ec6b3f:
+        fhash: m365_none_threat_detection
+        ask: Missing information to ask
+        logsource:
+            - 9d54153c-8432-4f9f-9dc7-3895ddda52be
+    cb59b4c6-2b58-4ea3-92ce-64d2257bb001:
+        fhash: m365_none_exchange
+        ask: Missing information to ask
+        logsource:
+            - 68cbcaf6-29a0-44f6-bd8f-ccc6e9098040
+    dd3a552e-7793-479e-ad2c-807257644f72:
+        fhash: okta_none_okta
+        ask: Missing information to ask
+        logsource:
+            - a174551e-dc1c-42f8-8695-4aec79ec712b
+    69293574-f615-4582-9272-9f6aa2ee1d03:
+        fhash: onelogin_none_onelogin.events
+        ask: Missing information to ask
+        logsource:
+            - 93cbebf6-fb23-499f-bcdb-91230afe4726
+    d56166e2-d35b-4b95-90da-f5c57ed7a139:
+        fhash: qualys_none_none
+        ask: Missing information to ask
+        logsource:
+            - 93bbe5f9-f704-4705-8ae5-bf09f3342dc7
+    2a86ae59-6eec-4e29-af85-49ba80a70aba:
+        fhash: none_none_netflow
+        ask: Missing information to ask
+        logsource:
+            - 77d595e8-4413-43cc-a161-8ce0f68b8dd2
+    b4c9b09d-a5d1-4067-a769-d612dbf756fb:
+        fhash: linux_none_auditd
+        ask: Missing information to ask
+        logsource:
+            - 574175b5-fe78-4d52-ad54-926968a8a530
+    4dc124b2-561b-47d2-a8b3-b508129a7d53:
+        fhash: linux_none_none
+        ask: Missing information to ask
+        logsource:
+            - 8051bb27-febf-460e-bf85-248477f9a95d
+    8c7d1638-b736-45a5-b9a8-4074f0c8b64d:
+        fhash: linux_none_auth
+        ask: Missing information to ask
+        logsource:
+            - 8fb39e50-277a-47ee-a4a9-311051016b31
+    7f032177-50cb-4d77-a35c-fad06b15b4da:
+        fhash: linux_none_clamav
+        ask: Missing information to ask
+        logsource:
+            - 04a0ee0b-aa5a-4723-bac2-3521e02e4ca1
+    f3a15113-66d5-4a80-bc22-d9d783a41348:
+        fhash: linux_none_cron
+        ask: Missing information to ask
+        logsource:
+            - b4b938e2-10b0-4eec-bb16-bd5e44e6c725
+    fd20ff7c-ff70-4b79-86f4-42b826a955e5:
+        fhash: linux_none_guacamole
+        ask: Missing information to ask
+        logsource:
+            - e589c429-1dd2-48d1-8628-af6c536ca2fc
+    e6311e9d-fb85-4616-b4af-28f630530eb6:
+        fhash: linux_none_sshd
+        ask: Missing information to ask
+        logsource:
+            - fc86fdf0-6961-40e0-a45f-ee611112ac7c
+    610e049e-c02b-48d3-993c-14425b9d9e4a:
+        fhash: linux_none_sudo
+        ask: Missing information to ask
+        logsource:
+            - 8de1679f-d452-4ed9-9691-f74ed29b031e
+    6f5abadd-8505-48fa-b2e5-ae83a33f36dd:
+        fhash: linux_none_syslog
+        ask: Missing information to ask
+        logsource:
+            - 201d3fcd-7470-4a13-af53-bdd02768e66e
+    dbe55039-b99d-4709-909c-db19b81b9f5d:
+        fhash: linux_none_vsftpd
+        ask: Missing information to ask
+        logsource:
+            - 71cc6c0c-d95d-4c79-8f79-b35f1f2620c5
+    9ac1b67c-4cba-498d-890e-51a58de1a3d9:
+        fhash: linux_file_event_none
+        ask: Missing information to ask
+        logsource:
+            - e9d799b8-49ab-43ca-9670-48cc9ab6988a
+    c086b7e8-cb5b-46f2-ad1a-52cef092a69c:
+        fhash: linux_network_connection_none
+        ask: Missing information to ask
+        logsource:
+            - 77fb9b22-f89b-48b1-8504-1606d5fc9f03
+    9507e003-82af-4a53-9030-8ec138fddfb4:
+        fhash: linux_process_creation_none
+        ask: Missing information to ask
+        logsource:
+            - 597a5a3a-2cee-4064-bf0f-7a22f35b1e2c
+    2bef0459-8ea6-4c1f-8726-45ad1bce05bf:
+        fhash: macos_file_event_none
+        ask: Missing information to ask
+        logsource:
+            - 864d24e3-f55c-4dc6-967e-4453f75c90b2
+    d8244fd8-239a-4796-bff6-02e6d0333aaa:
+        fhash: macos_process_creation_none
+        ask: Missing information to ask
+        logsource:
+            - b6d283a0-59e1-4bf9-952d-35728c31e8b9
+    98167a02-0c62-49b7-a5a5-fc49ea1aa9e6:
+        fhash: cisco_accounting_aaa
+        ask: Missing information to ask
+        logsource:
+            - 8e881b75-4d3d-4fe7-bf3f-71428e1167f3
+    70f475f3-5cfc-4f4d-b0aa-549a2e0808e4:
+        fhash: cisco_none_aaa
+        ask: Missing information to ask
+        logsource:
+            - c9d3b39f-4983-4d1a-bf6d-611e6cd9a19a
+    71d55a99-1289-4600-8340-e608291fbf11:
+        fhash: cisco_none_bgp
+        ask: Missing information to ask
+        logsource:
+            - b8aa6586-764a-4640-a3fe-024140cce597
+    f72b5f1e-66f5-4662-a7c0-2ad75773328b:
+        fhash: cisco_none_ldp
+        ask: Missing information to ask
+        logsource:
+            - 7c8fe139-487e-46e5-878e-f33018f55bc4
+    124e087b-b91f-4048-bac5-89c4810160de:
+        fhash: none_dns_none
+        ask: Missing information to ask
+        logsource:
+            - dc4afbc9-7b1d-4337-8329-6ab7b2db6b08
+    8b31315b-e222-443a-a625-b4ff44274fa9:
+        fhash: none_firewall_none
+        ask: Missing information to ask
+        logsource:
+            - b1b50bb8-457f-4f1b-a4c6-ba0823323d3a
+    90f214ea-d51b-4457-9653-31c558f5cb39:
+        fhash: huawei_none_bgp
+        ask: Missing information to ask
+        logsource:
+            - e613739d-a8d3-4acf-80e2-58a7b8a01541
+    864b110b-5b90-4f44-b41d-eb725287b011:
+        fhash: juniper_none_bgp
+        ask: Missing information to ask
+        logsource:
+            - 9b346ca7-f2a1-4cb4-8c35-eed7e3c00c0a
+    4b9e2a18-6629-4ca0-8981-924839ef670f:
+        fhash: zeek_none_dce_rpc
+        ask: Missing information to ask
+        logsource:
+            - 6dce903b-98f0-401d-bbf4-31da1ad89d12
+    7c0e7b95-773a-4e0a-b622-df05db6076d1:
+        fhash: zeek_none_smb_files
+        ask: Missing information to ask
+        logsource:
+            - 3899b7e3-86a3-4b2e-8796-978a7ccdf975
+    a251c8d3-dcea-49d8-802d-4ad2c1929377:
+        fhash: zeek_none_x509
+        ask: Missing information to ask
+        logsource:
+            - b23e2e30-2c63-4283-b4b2-ccd1aac0933f
+    2fcea2d2-2e5c-4c73-9c3a-0477e5fefaaa:
+        fhash: zeek_none_dns
+        ask: Missing information to ask
+        logsource:
+            - 88aec8d0-2c00-44ff-a920-3582719c3d7e
+    c8036ea4-f41e-4b6e-9645-849e233a57d5:
+        fhash: zeek_none_http
+        ask: Missing information to ask
+        logsource:
+            - 80442537-63af-47b0-8ade-5d4ded718ec1
+    19be66fd-d524-4ab1-891c-ebfd4ae5d102:
+        fhash: zeek_none_rdp
+        ask: Missing information to ask
+        logsource:
+            - a4e5fe33-a360-416c-8829-eb531d8b3dd8
+    9e308780-d4bf-48af-8f6c-36d7c8e64829:
+        fhash: zeek_none_kerberos
+        ask: Missing information to ask
+        logsource:
+            - 1ee4fb67-f7b3-4bed-8778-950e6e71bb56
+    4a5d330f-5d0a-427e-9d7f-da16c23369c8:
+        fhash: none_none_apache
+        ask: Missing information to ask
+        logsource:
+            - 2a4dc3f5-2f94-4d4d-aac7-7736464676c4
+    173d60e4-5034-4c09-b7f3-a06485e5ee50:
+        fhash: none_proxy_none
+        ask: Missing information to ask
+        logsource:
+            - 21f785d2-4e1b-4d88-8f40-48b94f104a04
+    57392727-cc74-48d3-8065-9e4b0269f5e3:
+        fhash: none_webserver_none
+        ask: Missing information to ask
+        logsource:
+            - 73965e93-11ea-4faa-bea1-8bf4b75c2d6e
+    7178d4ca-bddc-40ab-b970-9937e7cc615d:
+        fhash: windows_none_iis
+        ask: Missing information to ask
+        logsource:
+            - 5ab25500-4785-40d7-b07d-c8a177c61184
+    55cf1449-5508-4475-8986-9a0a6cd12e14:
+        fhash: windows_none_none
+        ask: Missing information to ask
+        logsource:
+            - 73892606-c0f3-4a4c-ad78-e4ff011389fb
+    c7d1d8ee-a6d9-478e-b4b4-95d6859a51eb:
+        fhash: windows_none_application
+        ask: Missing information to ask
+        logsource:
+            - 5164465d-17ea-450a-9080-699a33c5b659
+    70af88ef-dc48-4414-8531-6f72e269a310:
+        fhash: windows_none_applocker
+        ask: Missing information to ask
+        logsource:
+            - c3e821d5-085c-44aa-aa39-faeebf7b0b2d
+    ea65c740-187c-4e7f-ab98-5f8adb54688b:
+        fhash: windows_none_appmodel-runtime
+        ask: Missing information to ask
+        logsource:
+            - 37add74a-0c64-432d-869e-c7534f38bd53
+    e238c523-0eb9-4520-b811-88b452af9913:
+        fhash: windows_none_appxdeployment-server
+        ask: Missing information to ask
+        logsource:
+            - 5f2c65c3-d12a-4f7d-9ea3-8c228813efc2
+    981ec278-2ea3-4c48-adc5-dfd4ef1c1a5e:
+        fhash: windows_none_appxpackaging-om
+        ask: Missing information to ask
+        logsource:
+            - 7bfb66b3-84a0-4036-87ba-eb06e756668f
+    be98c1c0-a095-47ad-bc8b-e7fc70626d40:
+        fhash: windows_none_bits-client
+        ask: Missing information to ask
+        logsource:
+            - 9973c4b6-7b8b-47eb-8124-aa13916511a8
+    dad19fcb-57f1-4228-8653-25020ed80e18:
+        fhash: windows_none_codeintegrity-operational
+        ask: Missing information to ask
+        logsource:
+            - 2078b9a9-2fe4-4040-b739-83ca0e4e91bb
+    28bd53ec-621e-44a4-9d55-dd7f1c5ab22b:
+        fhash: windows_none_diagnosis-scripted
+        ask: Missing information to ask
+        logsource:
+            - 86aaa8f4-ce91-4e15-8be5-755e920b1166
+    55bb84a1-8bab-41c6-adb4-870813011245:
+        fhash: windows_none_dns-client
+        ask: Missing information to ask
+        logsource:
+            - 5a78ec6f-f646-44c6-9eb7-f7eff20efec3
+    7f9378f5-0a8b-4928-8e90-303327586ef7:
+        fhash: windows_none_dns-server
+        ask: Missing information to ask
+        logsource:
+            - f6c5b70e-f227-48aa-8bcf-863ca0dc3735
+    d1294d15-202c-4fb8-99cb-cf7f1076afcc:
+        fhash: windows_none_dns-server-analytic
+        ask: Missing information to ask
+        logsource:
+            - 53c9e882-02bb-498f-b6e1-7337297d0cbf
+    3924088f-8e12-4bf3-89ea-9ea13ea58f5d:
+        fhash: windows_none_driver-framework
+        ask: Missing information to ask
+        logsource:
+            - 3873e9b1-f931-4637-a3aa-5f95013b637a
+    4bc782d1-7fa8-4910-aa30-2f20617db8cc:
+        fhash: windows_none_firewall-as
+        ask: Missing information to ask
+        logsource:
+            - b87e009f-8aad-4653-84d3-e299353febd5
+    9088f1f1-6a0d-4ebb-9c7f-a675d9a42542:
+        fhash: windows_none_ldap_debug
+        ask: Missing information to ask
+        logsource:
+            - 9211671a-e9c7-442d-a374-5fe7b7c1ee2c
+    6e0429a1-3826-4ee4-a59a-eec529eb24f6:
+        fhash: windows_none_lsa-server
+        ask: Missing information to ask
+        logsource:
+            - 82fdfb2e-d018-48f5-a435-e9eb1e5a9766
+    adb24f3d-2724-4f6d-ac89-b1852126b38b:
+        fhash: windows_none_msexchange-management
+        ask: Missing information to ask
+        logsource:
+            - 86188b27-d799-4742-b769-a930fa341471
+    4a1871a5-0874-40b3-ace9-faecd4f86a34:
+        fhash: windows_none_ntlm
+        ask: Missing information to ask
+        logsource:
+            - 55a1b2cd-5cfe-4af1-8659-7e13f5625326
+    b9c9005b-42a1-41fa-aec2-10aab62d40de:
+        fhash: windows_none_openssh
+        ask: Missing information to ask
+        logsource:
+            - 88279619-5a5c-4cc9-9f82-75f48fa4159f
+    c0f60c98-3047-4a76-bf4d-52c20c148959:
+        fhash: windows_none_printservice-admin
+        ask: Missing information to ask
+        logsource:
+            - 73853467-79a3-4299-8aa2-51ce79163e53
+    85f7351e-3edb-4b1e-bed6-35c92b8ee70e:
+        fhash: windows_none_printservice-operational
+        ask: Missing information to ask
+        logsource:
+            - 15924f62-160e-45a9-b44e-a0e425221556
+    7930be98-205f-4a6a-a20a-68ea5997f6e5:
+        fhash: windows_none_security
+        ask: Missing information to ask
+        logsource:
+            - 3c70dec3-ff8d-4774-8806-17bacc280dea
+    44fc4355-4029-46a1-affe-c433e79d5aac:
+        fhash: windows_none_security-mitigations
+        ask: Missing information to ask
+        logsource:
+            - 8167a06b-52fb-4dae-87e3-4b4cd60ca7af
+    757d961f-9490-4536-a242-dfcda0252d84:
+        fhash: windows_none_microsoft-servicebus-client
+        ask: Missing information to ask
+        logsource:
+            - 19da40b6-4311-4be3-bfcd-69bd37a4e71e
+    9fae1872-5924-4cec-b43e-666977b6f5c8:
+        fhash: windows_none_shell-core
+        ask: Missing information to ask
+        logsource:
+            - 2181dc25-4623-467f-91f9-dd6ff0fc963f
+    1fc29f1f-4cf4-429a-b2c4-2af4e39f988e:
+        fhash: windows_none_smbclient-connectivity
+        ask: Missing information to ask
+        logsource:
+            - 05388908-6d27-440a-b062-70f7efce6523
+    7e11fe62-8103-42b5-a0ab-6698d48ec4bc:
+        fhash: windows_none_smbclient-security
+        ask: Missing information to ask
+        logsource:
+            - 0e011007-8980-4f11-8000-d64e6581197c
+    733db144-b29c-42da-8516-b2af2d383b3c:
+        fhash: windows_none_system
+        ask: Missing information to ask
+        logsource:
+            - 45f05cf4-15a5-49fa-9545-ae906f3c611f
+    4b59dc37-5591-4f8b-9245-ca92ef805a27:
+        fhash: windows_none_taskscheduler
+        ask: Missing information to ask
+        logsource:
+            - 7f55971a-344f-4db3-bf11-877182a63238
+    4dbae5b1-894c-4f08-96e5-c306a280b0e2:
+        fhash: windows_none_terminalservices-localsessionmanager
+        ask: Missing information to ask
+        logsource:
+            - 660d3bdb-480f-4334-ab37-44cda374238b
+    28030d23-5cc6-43e0-a48b-af771e47179d:
+        fhash: windows_none_windefend
+        ask: Missing information to ask
+        logsource:
+            - 7e7ac225-9279-4eee-977f-7749d4aa2cd4
+    ba6d09dc-5e5d-4a2e-883b-2c4a110d5a3f:
+        fhash: windows_none_wmi
+        ask: Missing information to ask
+        logsource:
+            - 576e9bb3-78a1-4a1f-b39b-c982c9dd6be5
+    d7a550a2-ae07-4b09-b36d-dd23914bd878:
+        fhash: windows_create_remote_thread_none
+        ask: Missing information to ask
+        logsource:
+            - 34e77bf0-828d-48e9-9235-e33022a6e5c6
+    b6c9289f-3cca-4b09-9d55-fb5c6e722ae7:
+        fhash: windows_create_stream_hash_none
+        ask: Missing information to ask
+        logsource:
+            - e67afb71-dfee-4999-86a9-bb7915b1db47
+    c535be75-cfe5-49fd-b42a-9d7033d8f5fc:
+        fhash: windows_dns_query_none
+        ask: Missing information to ask
+        logsource:
+            - d7d28800-e807-413e-8748-103b2f4853ce
+    a1a0f2bd-3ac5-4968-8d0e-be9ec823cd44:
+        fhash: windows_driver_load_none
+        ask: Missing information to ask
+        logsource:
+            - 37445e58-106f-4ba7-adc8-645f2674edd7
+    021eb6a5-da13-4bff-9666-4c4d69785048:
+        fhash: windows_file_access_none
+        ask: Missing information to ask
+        logsource:
+            - aab568cd-60be-4480-bad7-5009046284b4
+    fa880187-bf82-4a84-bfc7-7045b3933edd:
+        fhash: windows_file_change_none
+        ask: Missing information to ask
+        logsource:
+            - 0d9639e2-f7e7-4f64-8120-f6d4d15a8906
+    f741e3bb-2d53-4f4a-9c72-3050ad815aa3:
+        fhash: windows_file_delete_none
+        ask: Missing information to ask
+        logsource:
+            - 8529cfb7-d129-457b-a07c-a009165b0678
+    0cfba4a8-fa88-4feb-8780-002f2e7cdd07:
+        fhash: windows_file_event_none
+        ask: Missing information to ask
+        logsource:
+            - 33ef6925-0c28-4c0c-a983-630122c5eb2c
+    f67355ad-0cff-474b-a9d6-4fe854330b59:
+        fhash: windows_file_rename_none
+        ask: Missing information to ask
+        logsource:
+            - 542e5289-140b-4698-98d0-f1af114e74dc
+    59729905-b504-49cd-8b5b-5bbc2cb1c655:
+        fhash: windows_image_load_none
+        ask: Missing information to ask
+        logsource:
+            - 2d07dc80-bb8b-4e35-936d-3c42ae5aa25c
+    973d3c83-4ad5-4e2c-9ad9-b364a682a81f:
+        fhash: windows_network_connection_none
+        ask: Missing information to ask
+        logsource:
+            - aa6f3ced-4e85-44ec-81fc-5b1df56e8a02
+    0c5e0766-837b-4a13-848f-b5580300c8a0:
+        fhash: windows_pipe_created_none
+        ask: Missing information to ask
+        logsource:
+            - 5ced34a3-c8b7-482f-91ed-2378bd22dd20
+    6f5a2e61-66f6-46b7-b848-528da2ab4fb0:
+        fhash: windows_ps_classic_start_none
+        ask: Missing information to ask
+        logsource:
+            - 0e66b785-cdd5-4d74-b2bd-b78457690ff6
+    c4ca455b-b868-453e-8317-590ae4cff43f:
+        fhash: windows_none_powershell-classic
+        ask: Missing information to ask
+        logsource:
+            - d42a46b3-f4e3-4946-9dc5-e24b39e1274f
+    fca0d1ad-a2c6-4c57-870c-65fa12c7405d:
+        fhash: windows_ps_classic_provider_start_none
+        ask: Missing information to ask
+        logsource:
+            - af303560-1534-4482-aebe-e936d84b705f
+    d56fd4ea-5d5a-4e0f-8524-17723c9c00df:
+        fhash: windows_ps_module_none
+        ask: Missing information to ask
+        logsource:
+            - 6e172a97-77f2-427a-9068-c51f1883c5f6
+    06deb6dd-6b00-4500-bf35-c6d300f51104:
+        fhash: windows_ps_script_none
+        ask: Missing information to ask
+        logsource:
+            - 2a503beb-86f2-4042-8c45-ce03a9973dd4
+    30a48069-cc06-4171-a118-acb728cf936a:
+        fhash: windows_process_access_none
+        ask: Missing information to ask
+        logsource:
+            - 2afdb8e7-914d-4865-a1ad-fbd4c9efe7fc
+    eaf69c4f-727a-4b57-a191-fc8dfcb17fb3:
+        fhash: windows_process_creation_none
+        ask: Missing information to ask
+        logsource:
+            - 6fb091f9-c006-4533-87b5-a9ee9209234c
+    cf89dba9-fde2-4ace-87b7-c008a68608dc:
+        fhash: windows_raw_access_thread_none
+        ask: Missing information to ask
+        logsource:
+            - 146abafa-f8c7-423e-b36f-04a27a470039
+    6d46a837-2e72-41d1-8363-148d8593503a:
+        fhash: windows_registry_add_none
+        ask: Missing information to ask
+        logsource:
+            - 466a4902-5fab-4790-a869-cd5e2f115339
+    190ffbf7-b814-455c-a34f-6c12271c2652:
+        fhash: windows_registry_delete_none
+        ask: Missing information to ask
+        logsource:
+            - ffb62e81-6913-48f2-b593-9f39c03bf9b0
+    1bacab0d-346b-4740-8179-ebd4679eb345:
+        fhash: windows_registry_event_none
+        ask: Missing information to ask
+        logsource:
+            - 72fe9ddb-ed4a-4e27-9094-4d5241e1de8c
+    555c9042-b53a-41c7-83fd-30f970f99f2b:
+        fhash: windows_registry_set_none
+        ask: Missing information to ask
+        logsource:
+            - cea697ab-6ea8-462e-8024-221934e1ef40
+    ddc2c777-0d97-4666-a1e0-c9e28bf19a86:
+        fhash: windows_none_sysmon
+        ask: Missing information to ask
+        logsource:
+            - 4ff2b5b4-45c2-4ebb-846d-bea12146aa44
+    f92289a0-f979-4ab1-8e5b-ef28af929717:
+        fhash: windows_sysmon_error_none
+        ask: Missing information to ask
+        logsource:
+            - f6ec5a40-ceee-4f82-b046-3c39a8eb5c2d
+    4be03f55-0c28-4c15-aedf-95374bccaef8:
+        fhash: windows_sysmon_status_none
+        ask: Missing information to ask
+        logsource:
+            - c94ffd84-8ba8-4fd5-a2c4-b57c393b3bbb
+    fe1c7913-3aa8-4ad7-979a-f1949bd2502a:
+        fhash: windows_file_block_none
+        ask: Missing information to ask
+        logsource:
+            - ad69eda0-cdd0-49be-9508-e0e7a12cf108
+    28e6baa8-da8b-4806-813c-c80a7d69a889:
+        fhash: windows_process_tampering_none
+        ask: Missing information to ask
+        logsource:
+            - 559b46f7-c777-4307-9871-8a603b7af4eb
+    f5f0efd4-54a6-40c6-a1e6-108f477c4fdb:
+        fhash: windows_wmi_event_none
+        ask: Missing information to ask
+        logsource:
+            - bff81fba-1eb2-432a-9ffc-ab68492731fc
