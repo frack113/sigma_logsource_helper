@@ -620,7 +620,7 @@ questions:
             - 77d595e8-4413-43cc-a161-8ce0f68b8dd2
     b4c9b09d-a5d1-4067-a769-d612dbf756fb:
         fhash: linux_none_auditd
-        ask: Missing information to ask
+        ask: Do you have auditd enable with rules
         logsource:
             - 574175b5-fe78-4d52-ad54-926968a8a530
     4dc124b2-561b-47d2-a8b3-b508129a7d53:
@@ -1030,7 +1030,7 @@ questions:
             - 6e172a97-77f2-427a-9068-c51f1883c5f6
     06deb6dd-6b00-4500-bf35-c6d300f51104:
         fhash: windows_ps_script_none
-        ask: Missing information to ask
+        ask: Do you have enable Script Block Logging
         logsource:
             - 2a503beb-86f2-4042-8c45-ce03a9973dd4
     30a48069-cc06-4171-a118-acb728cf936a:
