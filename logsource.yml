@@ -770,7 +770,7 @@ questions:
             - 1ee4fb67-f7b3-4bed-8778-950e6e71bb56
     4a5d330f-5d0a-427e-9d7f-da16c23369c8:
         information: none_none_apache
-        ask: Do you have the apache error.log 
+        ask: Do you have the apache error.log
         logsource:
             - 2a4dc3f5-2f94-4d4d-aac7-7736464676c4
     173d60e4-5034-4c09-b7f3-a06485e5ee50:
@@ -850,57 +850,60 @@ questions:
             - 53c9e882-02bb-498f-b6e1-7337297d0cbf
     3924088f-8e12-4bf3-89ea-9ea13ea58f5d:
         information: windows_none_driver-framework
-        ask: Missing information to ask
+        ask: Do you have enable Microsoft-Windows-DriverFrameworks-UserMode/Operational channel
         logsource:
             - 3873e9b1-f931-4637-a3aa-5f95013b637a
     4bc782d1-7fa8-4910-aa30-2f20617db8cc:
         information: windows_none_firewall-as
-        ask: Missing information to ask
+        ask: Do you have enable Microsoft-Windows-Windows Firewall With Advanced Security/Firewall channel
         logsource:
             - b87e009f-8aad-4653-84d3-e299353febd5
     9088f1f1-6a0d-4ebb-9c7f-a675d9a42542:
         information: windows_none_ldap_debug
-        ask: Missing information to ask
+        ask: Do you have enable Microsoft-Windows-LDAP-Client/Debug channel
         logsource:
             - 9211671a-e9c7-442d-a374-5fe7b7c1ee2c
     6e0429a1-3826-4ee4-a59a-eec529eb24f6:
         information: windows_none_lsa-server
-        ask: Missing information to ask
+        ask: Do you have enable Microsoft-Windows-LSA/Operational channel
         logsource:
             - 82fdfb2e-d018-48f5-a435-e9eb1e5a9766
     adb24f3d-2724-4f6d-ac89-b1852126b38b:
         information: windows_none_msexchange-management
-        ask: Missing information to ask
+        ask: Do you have enable MSExchange Management channel
         logsource:
             - 86188b27-d799-4742-b769-a930fa341471
     4a1871a5-0874-40b3-ace9-faecd4f86a34:
         information: windows_none_ntlm
-        ask: Missing information to ask
+        ask: Do you have enable Microsoft-Windows-NTLM/Operational channel
         logsource:
             - 55a1b2cd-5cfe-4af1-8659-7e13f5625326
     b9c9005b-42a1-41fa-aec2-10aab62d40de:
         information: windows_none_openssh
-        ask: Missing information to ask
+        ask: Do you have enable OpenSSH/Operational channel
         logsource:
             - 88279619-5a5c-4cc9-9f82-75f48fa4159f
     c0f60c98-3047-4a76-bf4d-52c20c148959:
         information: windows_none_printservice-admin
-        ask: Missing information to ask
+        ask: Do you have enable Microsoft-Windows-PrintService/Admin channel
         logsource:
             - 73853467-79a3-4299-8aa2-51ce79163e53
     85f7351e-3edb-4b1e-bed6-35c92b8ee70e:
         information: windows_none_printservice-operational
-        ask: Missing information to ask
+        ask: Do you have enable Microsoft-Windows-PrintService/Operational channel
         logsource:
             - 15924f62-160e-45a9-b44e-a0e425221556
     7930be98-205f-4a6a-a20a-68ea5997f6e5:
         information: windows_none_security
-        ask: Missing information to ask
+        ask: Do you have enable security channel
         logsource:
             - 3c70dec3-ff8d-4774-8806-17bacc280dea
     44fc4355-4029-46a1-affe-c433e79d5aac:
         information: windows_none_security-mitigations
-        ask: Missing information to ask
+        ask: |
+            Do you have enable the channel 
+                - Microsoft-Windows-Security-Mitigations/Kernel Mode
+                - Microsoft-Windows-Security-Mitigations/User Mode
         logsource:
             - 8167a06b-52fb-4dae-87e3-4b4cd60ca7af
     757d961f-9490-4536-a242-dfcda0252d84:
@@ -920,32 +923,32 @@ questions:
             - 05388908-6d27-440a-b062-70f7efce6523
     7e11fe62-8103-42b5-a0ab-6698d48ec4bc:
         information: windows_none_smbclient-security
-        ask: Missing information to ask
+        ask: Do you have enable Microsoft-Windows-SmbClient/Security channel
         logsource:
             - 0e011007-8980-4f11-8000-d64e6581197c
     733db144-b29c-42da-8516-b2af2d383b3c:
         information: windows_none_system
-        ask: Missing information to ask
+        ask: Do you have enable system channel
         logsource:
             - 45f05cf4-15a5-49fa-9545-ae906f3c611f
     4b59dc37-5591-4f8b-9245-ca92ef805a27:
         information: windows_none_taskscheduler
-        ask: Missing information to ask
+        ask: Do you have enable Microsoft-Windows-TerminalServices-LocalSessionManager/Operational channel
         logsource:
             - 7f55971a-344f-4db3-bf11-877182a63238
     4dbae5b1-894c-4f08-96e5-c306a280b0e2:
         information: windows_none_terminalservices-localsessionmanager
-        ask: Missing information to ask
+        ask: Do you have enable Microsoft-Windows-VHDMP/Operational channel
         logsource:
             - 660d3bdb-480f-4334-ab37-44cda374238b
     28030d23-5cc6-43e0-a48b-af771e47179d:
         information: windows_none_windefend
-        ask: Missing information to ask
+        ask: Do you have enable Microsoft-Windows-Windows Defender/Operational channel
         logsource:
             - 7e7ac225-9279-4eee-977f-7749d4aa2cd4
     ba6d09dc-5e5d-4a2e-883b-2c4a110d5a3f:
         information: windows_none_wmi
-        ask: Missing information to ask
+        ask: Do you have enable Microsoft-Windows-WMI-Activity/Operational channel
         logsource:
             - 576e9bb3-78a1-4a1f-b39b-c982c9dd6be5
     d7a550a2-ae07-4b09-b36d-dd23914bd878:
@@ -1009,33 +1012,25 @@ questions:
         logsource:
             - 5ced34a3-c8b7-482f-91ed-2378bd22dd20
     6f5a2e61-66f6-46b7-b848-528da2ab4fb0:
-        information: windows_ps_classic_start_none
-        ask: Missing information to ask
+        information: ps_classic_start,powershell-classic,ps_classic_provider_start
+        ask: Do you have enable Windows PowerShell channel
         logsource:
             - 0e66b785-cdd5-4d74-b2bd-b78457690ff6
-    c4ca455b-b868-453e-8317-590ae4cff43f:
-        information: windows_none_powershell-classic
-        ask: Missing information to ask
-        logsource:
             - d42a46b3-f4e3-4946-9dc5-e24b39e1274f
-    fca0d1ad-a2c6-4c57-870c-65fa12c7405d:
-        information: windows_ps_classic_provider_start_none
-        ask: Missing information to ask
-        logsource:
             - af303560-1534-4482-aebe-e936d84b705f
     d56fd4ea-5d5a-4e0f-8524-17723c9c00df:
         information: windows_ps_module_none
-        ask: Missing information to ask
+        ask: Do you have enable Powershell Module Logging
         logsource:
             - 6e172a97-77f2-427a-9068-c51f1883c5f6
     06deb6dd-6b00-4500-bf35-c6d300f51104:
         information: windows_ps_script_none
-        ask: Do you have enable Script Block Logging
+        ask: Do you have enable Powershell Script Block Logging
         logsource:
             - 2a503beb-86f2-4042-8c45-ce03a9973dd4
     30a48069-cc06-4171-a118-acb728cf936a:
         information: windows_process_access_none
-        ask: Missing information to ask
+        ask: Do you have Microsoft-Windows-Sysmon EID 10 rules
         logsource:
             - 2afdb8e7-914d-4865-a1ad-fbd4c9efe7fc
     eaf69c4f-727a-4b57-a191-fc8dfcb17fb3:

@@ -1,4 +1,5 @@
-#Very bad script
+# Very bad script
+# Test done with Python 3.11.3 on windows 11
 import pathlib
 
 from ruamel.yaml import YAML
