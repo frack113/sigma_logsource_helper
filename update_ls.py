@@ -46,7 +46,7 @@ def update_logsources(data,path):
                 data[new_uuid4]['category'] = None if category == "Nome" else category
                 data[new_uuid4]['service'] = None if service == "Nome" else service
 
-def update_boolean_questions(data,missing_ask,logsources):
+def update_boolean_questions(data,default_ask,logsources):
     logsources_done = []
     for uuid_key in data:
         for uuid_logsource in data[uuid_key]['logsource']:
@@ -59,12 +59,19 @@ def update_boolean_questions(data,missing_ask,logsources):
             new_uuid4 = str(uuid.uuid4())
             fhash = get_fhash(logsources[uuid_key])
             data[new_uuid4] = {}
-            data[new_uuid4]['fhash'] = fhash
-            data[new_uuid4]['ask'] = missing_ask
+            data[new_uuid4]['information'] = fhash
+            data[new_uuid4]['ask'] = default_ask
             data[new_uuid4]['logsource'] = [uuid_key]
             logsources_done.append(uuid_key)
             print(f"Missing question for {fhash} add with uuid {new_uuid4}")
 
+def get_number_default_question(data,default_ask)->int:
+    int_q = 0
+    for uuid_key in data:
+        if data[uuid_key]['ask'] == default_ask :
+            int_q += 1
+    return int_q
+        
 
 print("Do not use unless you realy want it")
 print("Open logsource.yml")
@@ -83,3 +90,11 @@ with open('logsource.yml','w',encoding='UTF-8',newline='') as file_out:
 
 print(f"You have {len(yaml_database['logsources'])} Logsources information")
 print(f"You have {len(yaml_database['questions'])} boolean logsource questions")
+
+print("-----------------------")
+
+to_work = get_number_default_question(yaml_database['questions'],"Missing information to ask")
+if to_work == 0 :
+    print(f"It is a great day , there is no question with the default text")
+else:
+    print(f"You have {to_work} question(s) with the default text")

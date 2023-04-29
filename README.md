@@ -8,6 +8,15 @@ These are questions for selecting the right logsource according to the available
 There is no engine 
 And it's a POC, an idea 
 
+# Python script
+
+It is a simple script to genrerate the logsouce.yml  
+It is more a Proof Of Concept than a valid tools
+
+`fhash` for "frack Hash" , is a way to check logsource with a simple string.  
+It is not pretty but it's works
+
+
 # logsource Yaml 
 
 There are 2 parts in the file
@@ -15,8 +24,6 @@ There are 2 parts in the file
 - logsources : all the logsource found in the rules
 - questions : a boolean question to take the list of logsource
 
-`fhash` for "frack Hash" , is a way to check logsource with a simple string.
-It is not pretty but it's works
 
 # Missing
 
@@ -34,7 +41,7 @@ the logsource are from [Sigma](https://github.com/SigmaHQ/sigma-specification/bl
 ```
 
 in the question section:
-- `fhash` is not use. Should be change to description or context...  
+- `information` give some information.  
 - `ask` is the text of the question, I do not think the `?` is usefull here  
 - `logsource` is the list of logsource uuid that you need to use if you answer yes  
 
@@ -49,7 +56,7 @@ the logsource is `product: windows / category: ps_script` and the simple questio
 
 ```
     06deb6dd-6b00-4500-bf35-c6d300f51104:
-        fhash: windows_ps_script_none
+        information: windows_ps_script_none
         ask: Do you have enable Script Block Logging
         logsource:
             - 2a503beb-86f2-4042-8c45-ce03a9973dd4
@@ -61,7 +68,7 @@ the logsource is `product: linux / service: auditd` and the simple question is `
 
 ```
     b4c9b09d-a5d1-4067-a769-d612dbf756fb:
-        fhash: linux_none_auditd
+        information: linux_none_auditd
         ask: Do you have auditd enable with rules
         logsource:
             - 574175b5-fe78-4d52-ad54-926968a8a530
