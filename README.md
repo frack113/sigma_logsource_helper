@@ -25,9 +25,14 @@ There are 2 parts in the file
 - questions : a boolean question to take the list of logsource
 
 
-# Missing
+# Todo List
 
-Add a file or a part to select only the correct questions to ask.
+- [ ] check duplicate uuid
+- [ ] check if logsource is deleted ?
+- [ ] check if boolean question use a invalide uuid logsource
+- [ ] add question to select the boolean question
+- [ ] correcting spelling errors 
+
 
 # Details
 

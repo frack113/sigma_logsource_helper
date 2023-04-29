@@ -490,57 +490,57 @@ logsources:
 questions:
     716d9db2-c3bb-4680-ad84-6d52ed2520d6:
         information: django_application_none
-        ask: Missing information to ask
+        ask: Do you have the django log
         logsource:
             - f8c97900-ab0b-43c2-a979-173d67ed7ec5
     c02c7e05-48e4-4680-a2f4-9232d65f504e:
         information: jvm_application_none
-        ask: Missing information to ask
+        ask: Do you have the jvm log
         logsource:
             - 4a25e208-4cc7-4c7e-8782-37418172e38b
     5e1d3bfc-b836-463e-b23d-b37d7569908f:
         information: nodejs_application_none
-        ask: Missing information to ask
+        ask: Do you have the nodejs log
         logsource:
             - d1d6d310-c483-4fbb-828a-05098611d32e
     b125078b-9134-4f85-a755-5ec912c8b9fa:
         information: python_application_none
-        ask: Missing information to ask
+        ask: Do you have the python log
         logsource:
             - 54d71783-12ee-496c-bd1e-a99fa6a1c997
     b5172c5c-671f-41d9-b814-4848e16b2760:
         information: rpc_firewall_application_none
-        ask: Missing information to ask
+        ask: Do you have the Rpc Firewall log
         logsource:
             - f7bea8d6-b0bb-47f7-9a32-df34663af77c
     f69d1d34-d600-45c9-9f97-535ffd37b96c:
         information: ruby_on_rails_application_none
-        ask: Missing information to ask
+        ask: Do you have the Rubis on Rails log
         logsource:
             - be1b8c44-8835-460f-90fb-f970ed9d0792
     6c1eee05-663c-4ed1-b6bd-aead169916ad:
         information: spring_application_none
-        ask: Missing information to ask
+        ask: Do you have the spring log
         logsource:
             - 693409fa-cc18-4a23-8873-994d7381cedc
     5ceb59c0-5916-4886-ba34-70131e745fd0:
         information: sql_application_none
-        ask: Missing information to ask
+        ask: Do you have the internal sql log
         logsource:
             - dbcca761-853e-4ab0-913b-87d1cb7c3124
     6598a05d-ea08-4c45-a84b-fda2a19e0e15:
         information: velocity_application_none
-        ask: Missing information to ask
+        ask: Do you have the velocity log
         logsource:
             - d5f301f5-1f0e-4b47-b721-edb7e10fcf0e
     b08047b9-f5d3-4851-8360-7e55efc955af:
         information: none_antivirus_none
-        ask: Missing information to ask
+        ask: Do you have the antivirus detection message
         logsource:
             - 1ec9f408-2d96-42e4-8161-c2e79d04cb87
     94fe0506-2957-4cde-8842-b612f856d279:
         information: none_database_none
-        ask: Missing information to ask
+        ask: Do you have the sql queries log (drop, select,...)
         logsource:
             - ade5df9f-d676-44f9-8bb2-2d3df33a2982
     e6564297-e495-4eb1-9e34-91d55e35d446:
@@ -775,12 +775,12 @@ questions:
             - 2a4dc3f5-2f94-4d4d-aac7-7736464676c4
     173d60e4-5034-4c09-b7f3-a06485e5ee50:
         information: none_proxy_none
-        ask: Missing information to ask
+        ask: Do you have the W3C log of the proxy server
         logsource:
             - 21f785d2-4e1b-4d88-8f40-48b94f104a04
     57392727-cc74-48d3-8065-9e4b0269f5e3:
         information: none_webserver_none
-        ask: Missing information to ask
+        ask: Do you have the W3C log of the web server
         logsource:
             - 73965e93-11ea-4faa-bea1-8bf4b75c2d6e
     7178d4ca-bddc-40ab-b970-9937e7cc615d:
@@ -790,62 +790,67 @@ questions:
             - 5ab25500-4785-40d7-b07d-c8a177c61184
     55cf1449-5508-4475-8986-9a0a6cd12e14:
         information: windows_none_none
-        ask: Missing information to ask
+        ask: Do you have any windows channel
         logsource:
             - 73892606-c0f3-4a4c-ad78-e4ff011389fb
     c7d1d8ee-a6d9-478e-b4b4-95d6859a51eb:
         information: windows_none_application
-        ask: Missing information to ask
+        ask: Do you have enable Application channel
         logsource:
             - 5164465d-17ea-450a-9080-699a33c5b659
     70af88ef-dc48-4414-8531-6f72e269a310:
         information: windows_none_applocker
-        ask: Missing information to ask
+        ask: |
+            Do you have enable the channels
+                - Microsoft-Windows-AppLocker/MSI and Script
+                - Microsoft-Windows-AppLocker/EXE and DLL
+                - Microsoft-Windows-AppLocker/Packaged app-Deployment
+                - Microsoft-Windows-AppLocker/Packaged app-Execution
         logsource:
             - c3e821d5-085c-44aa-aa39-faeebf7b0b2d
     ea65c740-187c-4e7f-ab98-5f8adb54688b:
         information: windows_none_appmodel-runtime
-        ask: Missing information to ask
+        ask: Do you have enable Microsoft-Windows-AppModel-Runtime/Admin channel
         logsource:
             - 37add74a-0c64-432d-869e-c7534f38bd53
     e238c523-0eb9-4520-b811-88b452af9913:
         information: windows_none_appxdeployment-server
-        ask: Missing information to ask
+        ask: Do you have enable Microsoft-Windows-AppXDeploymentServer/Operational channel
         logsource:
             - 5f2c65c3-d12a-4f7d-9ea3-8c228813efc2
     981ec278-2ea3-4c48-adc5-dfd4ef1c1a5e:
         information: windows_none_appxpackaging-om
-        ask: Missing information to ask
+        ask: Do you have enable Microsoft-Windows-AppxPackaging/Operational channel
         logsource:
             - 7bfb66b3-84a0-4036-87ba-eb06e756668f
     be98c1c0-a095-47ad-bc8b-e7fc70626d40:
         information: windows_none_bits-client
-        ask: Missing information to ask
+        ask: Do you have enable Microsoft-Windows-Bits-Client/Operational channel
         logsource:
             - 9973c4b6-7b8b-47eb-8124-aa13916511a8
     dad19fcb-57f1-4228-8653-25020ed80e18:
         information: windows_none_codeintegrity-operational
-        ask: Missing information to ask
+        ask: Do you have enable Microsoft-Windows-CodeIntegrity/Operational channel
         logsource:
             - 2078b9a9-2fe4-4040-b739-83ca0e4e91bb
     28bd53ec-621e-44a4-9d55-dd7f1c5ab22b:
         information: windows_none_diagnosis-scripted
-        ask: Missing information to ask
+        ask: Do you have enable Microsoft-Windows-Diagnosis-Scripted/Operational channel
         logsource:
             - 86aaa8f4-ce91-4e15-8be5-755e920b1166
     55bb84a1-8bab-41c6-adb4-870813011245:
         information: windows_none_dns-client
-        ask: Missing information to ask
+        ask: Do you have enable Microsoft-Windows-DNS Client Events/Operational channel
         logsource:
             - 5a78ec6f-f646-44c6-9eb7-f7eff20efec3
     7f9378f5-0a8b-4928-8e90-303327586ef7:
         information: windows_none_dns-server
-        ask: Missing information to ask
+        ask: Do you have enable DNS Server channel
         logsource:
             - f6c5b70e-f227-48aa-8bcf-863ca0dc3735
     d1294d15-202c-4fb8-99cb-cf7f1076afcc:
         information: windows_none_dns-server-analytic
-        ask: Missing information to ask
+        ask: Do you have enable Microsoft-Windows-DNS-Server/Analytical channel
         logsource:
             - 53c9e882-02bb-498f-b6e1-7337297d0cbf
     3924088f-8e12-4bf3-89ea-9ea13ea58f5d:
@@ -908,12 +913,12 @@ questions:
             - 8167a06b-52fb-4dae-87e3-4b4cd60ca7af
     757d961f-9490-4536-a242-dfcda0252d84:
         information: windows_none_microsoft-servicebus-client
-        ask: Missing information to ask
+        ask: Do you have enable Microsoft-ServiceBus-Client channel
         logsource:
             - 19da40b6-4311-4be3-bfcd-69bd37a4e71e
     9fae1872-5924-4cec-b43e-666977b6f5c8:
         information: windows_none_shell-core
-        ask: Missing information to ask
+        ask: Do you have enable Microsoft-Windows-Shell-Core/Operational channel
         logsource:
             - 2181dc25-4623-467f-91f9-dd6ff0fc963f
     1fc29f1f-4cf4-429a-b2c4-2af4e39f988e:
