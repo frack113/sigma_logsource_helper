@@ -487,135 +487,123 @@ logsources:
         product: windows
         category: wmi_event
         service: none
-questions:
+questions_logsources:
     716d9db2-c3bb-4680-ad84-6d52ed2520d6:
         information: django_application_none
-        ask: Missing information to ask
+        ask: Do you have the django log
         logsource:
             - f8c97900-ab0b-43c2-a979-173d67ed7ec5
     c02c7e05-48e4-4680-a2f4-9232d65f504e:
         information: jvm_application_none
-        ask: Missing information to ask
+        ask: Do you have the jvm log
         logsource:
             - 4a25e208-4cc7-4c7e-8782-37418172e38b
     5e1d3bfc-b836-463e-b23d-b37d7569908f:
         information: nodejs_application_none
-        ask: Missing information to ask
+        ask: Do you have the nodejs log
         logsource:
             - d1d6d310-c483-4fbb-828a-05098611d32e
     b125078b-9134-4f85-a755-5ec912c8b9fa:
         information: python_application_none
-        ask: Missing information to ask
+        ask: Do you have the python log
         logsource:
             - 54d71783-12ee-496c-bd1e-a99fa6a1c997
     b5172c5c-671f-41d9-b814-4848e16b2760:
         information: rpc_firewall_application_none
-        ask: Missing information to ask
+        ask: Do you have the Rpc Firewall log
         logsource:
             - f7bea8d6-b0bb-47f7-9a32-df34663af77c
     f69d1d34-d600-45c9-9f97-535ffd37b96c:
         information: ruby_on_rails_application_none
-        ask: Missing information to ask
+        ask: Do you have the Rubis on Rails log
         logsource:
             - be1b8c44-8835-460f-90fb-f970ed9d0792
     6c1eee05-663c-4ed1-b6bd-aead169916ad:
         information: spring_application_none
-        ask: Missing information to ask
+        ask: Do you have the spring log
         logsource:
             - 693409fa-cc18-4a23-8873-994d7381cedc
     5ceb59c0-5916-4886-ba34-70131e745fd0:
         information: sql_application_none
-        ask: Missing information to ask
+        ask: Do you have the internal sql log
         logsource:
             - dbcca761-853e-4ab0-913b-87d1cb7c3124
     6598a05d-ea08-4c45-a84b-fda2a19e0e15:
         information: velocity_application_none
-        ask: Missing information to ask
+        ask: Do you have the velocity log
         logsource:
             - d5f301f5-1f0e-4b47-b721-edb7e10fcf0e
     b08047b9-f5d3-4851-8360-7e55efc955af:
         information: none_antivirus_none
-        ask: Missing information to ask
+        ask: Do you have the antivirus detection message
         logsource:
             - 1ec9f408-2d96-42e4-8161-c2e79d04cb87
     94fe0506-2957-4cde-8842-b612f856d279:
         information: none_database_none
-        ask: Missing information to ask
+        ask: Do you have the sql queries log (drop, select,...)
         logsource:
             - ade5df9f-d676-44f9-8bb2-2d3df33a2982
     e6564297-e495-4eb1-9e34-91d55e35d446:
         information: aws_none_cloudtrail
-        ask: Missing information to ask
+        ask: Do you use cloudtrail
         logsource:
             - b0fb5e51-de11-4317-bd37-764fae49a6f0
     f5d53104-7630-4d2d-bb61-8365432de31b:
-        information: azure_none_azureactivity
-        ask: Missing information to ask
+        information: azureactivity,auditlogs,signinlogs,activitylogs
+        ask: Do you use azure
         logsource:
             - ae78453a-ae4e-4a25-8136-2bac5c361398
-    33a71220-2b48-4aef-80bc-177cc90cf92f:
-        information: azure_none_auditlogs
-        ask: Missing information to ask
-        logsource:
             - 19cd032c-e982-4ac8-a255-59cc1497d9d8
-    148c04f3-b570-4329-b7ed-c68c64b67819:
-        information: azure_none_signinlogs
-        ask: Missing information to ask
-        logsource:
             - 57ffca97-62b3-4630-ad3c-e92d6d59b5ea
-    63bc3459-e0a9-463d-bc2d-bae54522d018:
-        information: azure_none_activitylogs
-        ask: Missing information to ask
-        logsource:
             - ca136989-060a-40f8-9166-8e05136d5e41
     aee5b6f9-5112-4a74-bc8f-ffa821243751:
         information: gcp_none_gcp.audit
-        ask: Missing information to ask
+        ask: Do you use Gcp
         logsource:
             - aa344956-befb-4652-8503-6171c0db7ecb
     381293df-6100-4fc8-8260-262bf9e9605d:
         information: github_none_audit
-        ask: Missing information to ask
+        ask: Do you use github
         logsource:
             - 81f70ef6-eac4-4ce9-875a-21444b7f0cea
     330be6c8-36e0-4bad-89ce-a650f8886a29:
         information: google_workspace_none_google_workspace.admin
-        ask: Missing information to ask
+        ask: Do you use Google Workspace
         logsource:
             - 723d1db5-6d16-465a-a34b-adfe4d0a3f2e
     0f5dc751-064b-4d9d-b7b6-ca8885e305c8:
         information: m365_none_threat_management
-        ask: Missing information to ask
+        ask: Do you use Microsoft 365 Threat Management
         logsource:
             - 1b085ae7-68a7-4214-83a9-6c83f066ce21
     b6cd0eb0-6073-4af2-90bb-eddd59ec6b3f:
         information: m365_none_threat_detection
-        ask: Missing information to ask
+        ask: Do you use Microsoft 365 Threat Detection
         logsource:
             - 9d54153c-8432-4f9f-9dc7-3895ddda52be
     cb59b4c6-2b58-4ea3-92ce-64d2257bb001:
         information: m365_none_exchange
-        ask: Missing information to ask
+        ask: Do you use Microsoft 365 Exchange
         logsource:
             - 68cbcaf6-29a0-44f6-bd8f-ccc6e9098040
     dd3a552e-7793-479e-ad2c-807257644f72:
         information: okta_none_okta
-        ask: Missing information to ask
+        ask: Do you use Okta
         logsource:
             - a174551e-dc1c-42f8-8695-4aec79ec712b
     69293574-f615-4582-9272-9f6aa2ee1d03:
         information: onelogin_none_onelogin.events
-        ask: Missing information to ask
+        ask: Do you use OneLogin
         logsource:
             - 93cbebf6-fb23-499f-bcdb-91230afe4726
     d56166e2-d35b-4b95-90da-f5c57ed7a139:
         information: qualys_none_none
-        ask: Missing information to ask
+        ask: Do you use Qualys
         logsource:
             - 93bbe5f9-f704-4705-8ae5-bf09f3342dc7
     2a86ae59-6eec-4e29-af85-49ba80a70aba:
         information: none_none_netflow
-        ask: Missing information to ask
+        ask: Do you network netflow data
         logsource:
             - 77d595e8-4413-43cc-a161-8ce0f68b8dd2
     b4c9b09d-a5d1-4067-a769-d612dbf756fb:
@@ -625,62 +613,62 @@ questions:
             - 574175b5-fe78-4d52-ad54-926968a8a530
     4dc124b2-561b-47d2-a8b3-b508129a7d53:
         information: linux_none_none
-        ask: Missing information to ask
+        ask: Do you have any linux log
         logsource:
             - 8051bb27-febf-460e-bf85-248477f9a95d
     8c7d1638-b736-45a5-b9a8-4074f0c8b64d:
         information: linux_none_auth
-        ask: Missing information to ask
+        ask: Do you have auth.log
         logsource:
             - 8fb39e50-277a-47ee-a4a9-311051016b31
     7f032177-50cb-4d77-a35c-fad06b15b4da:
         information: linux_none_clamav
-        ask: Missing information to ask
+        ask: Do you have clamav
         logsource:
             - 04a0ee0b-aa5a-4723-bac2-3521e02e4ca1
     f3a15113-66d5-4a80-bc22-d9d783a41348:
         information: linux_none_cron
-        ask: Missing information to ask
+        ask: Do you have cron
         logsource:
             - b4b938e2-10b0-4eec-bb16-bd5e44e6c725
     fd20ff7c-ff70-4b79-86f4-42b826a955e5:
         information: linux_none_guacamole
-        ask: Missing information to ask
+        ask: Do you have guacamole
         logsource:
             - e589c429-1dd2-48d1-8628-af6c536ca2fc
     e6311e9d-fb85-4616-b4af-28f630530eb6:
         information: linux_none_sshd
-        ask: Missing information to ask
+        ask: Do you have sshd
         logsource:
             - fc86fdf0-6961-40e0-a45f-ee611112ac7c
     610e049e-c02b-48d3-993c-14425b9d9e4a:
         information: linux_none_sudo
-        ask: Missing information to ask
+        ask: Do you have sudo
         logsource:
             - 8de1679f-d452-4ed9-9691-f74ed29b031e
     6f5abadd-8505-48fa-b2e5-ae83a33f36dd:
         information: linux_none_syslog
-        ask: Missing information to ask
+        ask: Do you have syslog
         logsource:
             - 201d3fcd-7470-4a13-af53-bdd02768e66e
     dbe55039-b99d-4709-909c-db19b81b9f5d:
         information: linux_none_vsftpd
-        ask: Missing information to ask
+        ask: Do you have vsftpd
         logsource:
             - 71cc6c0c-d95d-4c79-8f79-b35f1f2620c5
     9ac1b67c-4cba-498d-890e-51a58de1a3d9:
         information: linux_file_event_none
-        ask: Missing information to ask
+        ask: Do you have Microsoft-Linux-Sysmon EID 11 rules
         logsource:
             - e9d799b8-49ab-43ca-9670-48cc9ab6988a
     c086b7e8-cb5b-46f2-ad1a-52cef092a69c:
         information: linux_network_connection_none
-        ask: Missing information to ask
+        ask: Do you have Microsoft-Linux-Sysmon EID 3 rules
         logsource:
             - 77fb9b22-f89b-48b1-8504-1606d5fc9f03
     9507e003-82af-4a53-9030-8ec138fddfb4:
         information: linux_process_creation_none
-        ask: Missing information to ask
+        ask: Do you have Microsoft-Linux-Sysmon EID 1 rules
         logsource:
             - 597a5a3a-2cee-4064-bf0f-7a22f35b1e2c
     2bef0459-8ea6-4c1f-8726-45ad1bce05bf:
@@ -770,17 +758,17 @@ questions:
             - 1ee4fb67-f7b3-4bed-8778-950e6e71bb56
     4a5d330f-5d0a-427e-9d7f-da16c23369c8:
         information: none_none_apache
-        ask: Do you have the apache error.log 
+        ask: Do you have the apache error.log
         logsource:
             - 2a4dc3f5-2f94-4d4d-aac7-7736464676c4
     173d60e4-5034-4c09-b7f3-a06485e5ee50:
         information: none_proxy_none
-        ask: Missing information to ask
+        ask: Do you have the W3C log of the proxy server
         logsource:
             - 21f785d2-4e1b-4d88-8f40-48b94f104a04
     57392727-cc74-48d3-8065-9e4b0269f5e3:
         information: none_webserver_none
-        ask: Missing information to ask
+        ask: Do you have the W3C log of the web server
         logsource:
             - 73965e93-11ea-4faa-bea1-8bf4b75c2d6e
     7178d4ca-bddc-40ab-b970-9937e7cc615d:
@@ -790,127 +778,135 @@ questions:
             - 5ab25500-4785-40d7-b07d-c8a177c61184
     55cf1449-5508-4475-8986-9a0a6cd12e14:
         information: windows_none_none
-        ask: Missing information to ask
+        ask: Do you have any windows channel
         logsource:
             - 73892606-c0f3-4a4c-ad78-e4ff011389fb
     c7d1d8ee-a6d9-478e-b4b4-95d6859a51eb:
         information: windows_none_application
-        ask: Missing information to ask
+        ask: Do you have enable Application channel
         logsource:
             - 5164465d-17ea-450a-9080-699a33c5b659
     70af88ef-dc48-4414-8531-6f72e269a310:
         information: windows_none_applocker
-        ask: Missing information to ask
+        ask: |
+            Do you have enable the channels
+                - Microsoft-Windows-AppLocker/MSI and Script
+                - Microsoft-Windows-AppLocker/EXE and DLL
+                - Microsoft-Windows-AppLocker/Packaged app-Deployment
+                - Microsoft-Windows-AppLocker/Packaged app-Execution
         logsource:
             - c3e821d5-085c-44aa-aa39-faeebf7b0b2d
     ea65c740-187c-4e7f-ab98-5f8adb54688b:
         information: windows_none_appmodel-runtime
-        ask: Missing information to ask
+        ask: Do you have enable Microsoft-Windows-AppModel-Runtime/Admin channel
         logsource:
             - 37add74a-0c64-432d-869e-c7534f38bd53
     e238c523-0eb9-4520-b811-88b452af9913:
         information: windows_none_appxdeployment-server
-        ask: Missing information to ask
+        ask: Do you have enable Microsoft-Windows-AppXDeploymentServer/Operational channel
         logsource:
             - 5f2c65c3-d12a-4f7d-9ea3-8c228813efc2
     981ec278-2ea3-4c48-adc5-dfd4ef1c1a5e:
         information: windows_none_appxpackaging-om
-        ask: Missing information to ask
+        ask: Do you have enable Microsoft-Windows-AppxPackaging/Operational channel
         logsource:
             - 7bfb66b3-84a0-4036-87ba-eb06e756668f
     be98c1c0-a095-47ad-bc8b-e7fc70626d40:
         information: windows_none_bits-client
-        ask: Missing information to ask
+        ask: Do you have enable Microsoft-Windows-Bits-Client/Operational channel
         logsource:
             - 9973c4b6-7b8b-47eb-8124-aa13916511a8
     dad19fcb-57f1-4228-8653-25020ed80e18:
         information: windows_none_codeintegrity-operational
-        ask: Missing information to ask
+        ask: Do you have enable Microsoft-Windows-CodeIntegrity/Operational channel
         logsource:
             - 2078b9a9-2fe4-4040-b739-83ca0e4e91bb
     28bd53ec-621e-44a4-9d55-dd7f1c5ab22b:
         information: windows_none_diagnosis-scripted
-        ask: Missing information to ask
+        ask: Do you have enable Microsoft-Windows-Diagnosis-Scripted/Operational channel
         logsource:
             - 86aaa8f4-ce91-4e15-8be5-755e920b1166
     55bb84a1-8bab-41c6-adb4-870813011245:
         information: windows_none_dns-client
-        ask: Missing information to ask
+        ask: Do you have enable Microsoft-Windows-DNS Client Events/Operational channel
         logsource:
             - 5a78ec6f-f646-44c6-9eb7-f7eff20efec3
     7f9378f5-0a8b-4928-8e90-303327586ef7:
         information: windows_none_dns-server
-        ask: Missing information to ask
+        ask: Do you have enable DNS Server channel
         logsource:
             - f6c5b70e-f227-48aa-8bcf-863ca0dc3735
     d1294d15-202c-4fb8-99cb-cf7f1076afcc:
         information: windows_none_dns-server-analytic
-        ask: Missing information to ask
+        ask: Do you have enable Microsoft-Windows-DNS-Server/Analytical channel
         logsource:
             - 53c9e882-02bb-498f-b6e1-7337297d0cbf
     3924088f-8e12-4bf3-89ea-9ea13ea58f5d:
         information: windows_none_driver-framework
-        ask: Missing information to ask
+        ask: Do you have enable Microsoft-Windows-DriverFrameworks-UserMode/Operational channel
         logsource:
             - 3873e9b1-f931-4637-a3aa-5f95013b637a
     4bc782d1-7fa8-4910-aa30-2f20617db8cc:
         information: windows_none_firewall-as
-        ask: Missing information to ask
+        ask: Do you have enable Microsoft-Windows-Windows Firewall With Advanced Security/Firewall channel
         logsource:
             - b87e009f-8aad-4653-84d3-e299353febd5
     9088f1f1-6a0d-4ebb-9c7f-a675d9a42542:
         information: windows_none_ldap_debug
-        ask: Missing information to ask
+        ask: Do you have enable Microsoft-Windows-LDAP-Client/Debug channel
         logsource:
             - 9211671a-e9c7-442d-a374-5fe7b7c1ee2c
     6e0429a1-3826-4ee4-a59a-eec529eb24f6:
         information: windows_none_lsa-server
-        ask: Missing information to ask
+        ask: Do you have enable Microsoft-Windows-LSA/Operational channel
         logsource:
             - 82fdfb2e-d018-48f5-a435-e9eb1e5a9766
     adb24f3d-2724-4f6d-ac89-b1852126b38b:
         information: windows_none_msexchange-management
-        ask: Missing information to ask
+        ask: Do you have enable MSExchange Management channel
         logsource:
             - 86188b27-d799-4742-b769-a930fa341471
     4a1871a5-0874-40b3-ace9-faecd4f86a34:
         information: windows_none_ntlm
-        ask: Missing information to ask
+        ask: Do you have enable Microsoft-Windows-NTLM/Operational channel
         logsource:
             - 55a1b2cd-5cfe-4af1-8659-7e13f5625326
     b9c9005b-42a1-41fa-aec2-10aab62d40de:
         information: windows_none_openssh
-        ask: Missing information to ask
+        ask: Do you have enable OpenSSH/Operational channel
         logsource:
             - 88279619-5a5c-4cc9-9f82-75f48fa4159f
     c0f60c98-3047-4a76-bf4d-52c20c148959:
         information: windows_none_printservice-admin
-        ask: Missing information to ask
+        ask: Do you have enable Microsoft-Windows-PrintService/Admin channel
         logsource:
             - 73853467-79a3-4299-8aa2-51ce79163e53
     85f7351e-3edb-4b1e-bed6-35c92b8ee70e:
         information: windows_none_printservice-operational
-        ask: Missing information to ask
+        ask: Do you have enable Microsoft-Windows-PrintService/Operational channel
         logsource:
             - 15924f62-160e-45a9-b44e-a0e425221556
     7930be98-205f-4a6a-a20a-68ea5997f6e5:
         information: windows_none_security
-        ask: Missing information to ask
+        ask: Do you have enable security channel
         logsource:
             - 3c70dec3-ff8d-4774-8806-17bacc280dea
     44fc4355-4029-46a1-affe-c433e79d5aac:
         information: windows_none_security-mitigations
-        ask: Missing information to ask
+        ask: |
+            Do you have enable the channel 
+                - Microsoft-Windows-Security-Mitigations/Kernel Mode
+                - Microsoft-Windows-Security-Mitigations/User Mode
         logsource:
             - 8167a06b-52fb-4dae-87e3-4b4cd60ca7af
     757d961f-9490-4536-a242-dfcda0252d84:
         information: windows_none_microsoft-servicebus-client
-        ask: Missing information to ask
+        ask: Do you have enable Microsoft-ServiceBus-Client channel
         logsource:
             - 19da40b6-4311-4be3-bfcd-69bd37a4e71e
     9fae1872-5924-4cec-b43e-666977b6f5c8:
         information: windows_none_shell-core
-        ask: Missing information to ask
+        ask: Do you have enable Microsoft-Windows-Shell-Core/Operational channel
         logsource:
             - 2181dc25-4623-467f-91f9-dd6ff0fc963f
     1fc29f1f-4cf4-429a-b2c4-2af4e39f988e:
@@ -920,32 +916,32 @@ questions:
             - 05388908-6d27-440a-b062-70f7efce6523
     7e11fe62-8103-42b5-a0ab-6698d48ec4bc:
         information: windows_none_smbclient-security
-        ask: Missing information to ask
+        ask: Do you have enable Microsoft-Windows-SmbClient/Security channel
         logsource:
             - 0e011007-8980-4f11-8000-d64e6581197c
     733db144-b29c-42da-8516-b2af2d383b3c:
         information: windows_none_system
-        ask: Missing information to ask
+        ask: Do you have enable system channel
         logsource:
             - 45f05cf4-15a5-49fa-9545-ae906f3c611f
     4b59dc37-5591-4f8b-9245-ca92ef805a27:
         information: windows_none_taskscheduler
-        ask: Missing information to ask
+        ask: Do you have enable Microsoft-Windows-TerminalServices-LocalSessionManager/Operational channel
         logsource:
             - 7f55971a-344f-4db3-bf11-877182a63238
     4dbae5b1-894c-4f08-96e5-c306a280b0e2:
         information: windows_none_terminalservices-localsessionmanager
-        ask: Missing information to ask
+        ask: Do you have enable Microsoft-Windows-VHDMP/Operational channel
         logsource:
             - 660d3bdb-480f-4334-ab37-44cda374238b
     28030d23-5cc6-43e0-a48b-af771e47179d:
         information: windows_none_windefend
-        ask: Missing information to ask
+        ask: Do you have enable Microsoft-Windows-Windows Defender/Operational channel
         logsource:
             - 7e7ac225-9279-4eee-977f-7749d4aa2cd4
     ba6d09dc-5e5d-4a2e-883b-2c4a110d5a3f:
         information: windows_none_wmi
-        ask: Missing information to ask
+        ask: Do you have enable Microsoft-Windows-WMI-Activity/Operational channel
         logsource:
             - 576e9bb3-78a1-4a1f-b39b-c982c9dd6be5
     d7a550a2-ae07-4b09-b36d-dd23914bd878:
@@ -1009,33 +1005,25 @@ questions:
         logsource:
             - 5ced34a3-c8b7-482f-91ed-2378bd22dd20
     6f5a2e61-66f6-46b7-b848-528da2ab4fb0:
-        information: windows_ps_classic_start_none
-        ask: Missing information to ask
+        information: ps_classic_start,powershell-classic,ps_classic_provider_start
+        ask: Do you have enable Windows PowerShell channel
         logsource:
             - 0e66b785-cdd5-4d74-b2bd-b78457690ff6
-    c4ca455b-b868-453e-8317-590ae4cff43f:
-        information: windows_none_powershell-classic
-        ask: Missing information to ask
-        logsource:
             - d42a46b3-f4e3-4946-9dc5-e24b39e1274f
-    fca0d1ad-a2c6-4c57-870c-65fa12c7405d:
-        information: windows_ps_classic_provider_start_none
-        ask: Missing information to ask
-        logsource:
             - af303560-1534-4482-aebe-e936d84b705f
     d56fd4ea-5d5a-4e0f-8524-17723c9c00df:
         information: windows_ps_module_none
-        ask: Missing information to ask
+        ask: Do you have enable Powershell Module Logging
         logsource:
             - 6e172a97-77f2-427a-9068-c51f1883c5f6
     06deb6dd-6b00-4500-bf35-c6d300f51104:
         information: windows_ps_script_none
-        ask: Do you have enable Script Block Logging
+        ask: Do you have enable Powershell Script Block Logging
         logsource:
             - 2a503beb-86f2-4042-8c45-ce03a9973dd4
     30a48069-cc06-4171-a118-acb728cf936a:
         information: windows_process_access_none
-        ask: Missing information to ask
+        ask: Do you have Microsoft-Windows-Sysmon EID 10 rules
         logsource:
             - 2afdb8e7-914d-4865-a1ad-fbd4c9efe7fc
     eaf69c4f-727a-4b57-a191-fc8dfcb17fb3:
@@ -1090,3 +1078,493 @@ questions:
         ask: Do you have Microsoft-Windows-Sysmon EID 19,20 or 21 rules
         logsource:
             - bff81fba-1eb2-432a-9ffc-ab68492731fc
+questions_type:
+    716d9db2-c3bb-4680-ad84-6d52ed2520d6:
+        information: select all the Windows sysmon event
+        ask: Do do have sysmon for Windows
+        question:
+            - f92289a0-f979-4ab1-8e5b-ef28af929717
+            - d7a550a2-ae07-4b09-b36d-dd23914bd878
+            - b6c9289f-3cca-4b09-9d55-fb5c6e722ae7
+            - c535be75-cfe5-49fd-b42a-9d7033d8f5fc
+            - a1a0f2bd-3ac5-4968-8d0e-be9ec823cd44
+            - 021eb6a5-da13-4bff-9666-4c4d69785048
+            - fa880187-bf82-4a84-bfc7-7045b3933edd
+            - f741e3bb-2d53-4f4a-9c72-3050ad815aa3
+            - 0cfba4a8-fa88-4feb-8780-002f2e7cdd07
+            - 59729905-b504-49cd-8b5b-5bbc2cb1c655
+            - 973d3c83-4ad5-4e2c-9ad9-b364a682a81f
+            - 0c5e0766-837b-4a13-848f-b5580300c8a0
+            - 30a48069-cc06-4171-a118-acb728cf936a
+            - eaf69c4f-727a-4b57-a191-fc8dfcb17fb3
+            - cf89dba9-fde2-4ace-87b7-c008a68608dc
+            - 6d46a837-2e72-41d1-8363-148d8593503a
+            - 190ffbf7-b814-455c-a34f-6c12271c2652
+            - 1bacab0d-346b-4740-8179-ebd4679eb345
+            - 555c9042-b53a-41c7-83fd-30f970f99f2b
+            - fe1c7913-3aa8-4ad7-979a-f1949bd2502a
+            - 28e6baa8-da8b-4806-813c-c80a7d69a889
+            - f5f0efd4-54a6-40c6-a1e6-108f477c4fdb
+    0d1335b1-da48-4147-b212-1f503289c2a1:
+        information: Powersell starting from 5.0
+        ask: Do you have Windows PowerShell 5 or above
+        question:
+            - d56fd4ea-5d5a-4e0f-8524-17723c9c00df
+            - 06deb6dd-6b00-4500-bf35-c6d300f51104
+    c19d1497-317f-424e-a378-d6c9af2c789b:
+        information: django_application_none
+        ask: Missing
+        question:
+            - 716d9db2-c3bb-4680-ad84-6d52ed2520d6
+    2670153d-cfcf-44a1-a308-71823b99dc71:
+        information: jvm_application_none
+        ask: Missing
+        question:
+            - c02c7e05-48e4-4680-a2f4-9232d65f504e
+    8ca02866-d082-4616-b1b0-ea5518d90cff:
+        information: nodejs_application_none
+        ask: Missing
+        question:
+            - 5e1d3bfc-b836-463e-b23d-b37d7569908f
+    6e40007f-42e7-41ac-9e4a-f92a97bd926b:
+        information: python_application_none
+        ask: Missing
+        question:
+            - b125078b-9134-4f85-a755-5ec912c8b9fa
+    84afd37b-0efe-4076-9527-8b2690b5a628:
+        information: rpc_firewall_application_none
+        ask: Missing
+        question:
+            - b5172c5c-671f-41d9-b814-4848e16b2760
+    148f7855-d2f0-4139-85a1-4c4cb2eb6caa:
+        information: ruby_on_rails_application_none
+        ask: Missing
+        question:
+            - f69d1d34-d600-45c9-9f97-535ffd37b96c
+    d0d3e707-502c-4c82-960f-84e1acf5e5fb:
+        information: spring_application_none
+        ask: Missing
+        question:
+            - 6c1eee05-663c-4ed1-b6bd-aead169916ad
+    3e8a9e3a-83a3-4eea-9489-451315d4ae8a:
+        information: sql_application_none
+        ask: Missing
+        question:
+            - 5ceb59c0-5916-4886-ba34-70131e745fd0
+    1736b563-aeb1-48c4-9ead-f69be149d11a:
+        information: velocity_application_none
+        ask: Missing
+        question:
+            - 6598a05d-ea08-4c45-a84b-fda2a19e0e15
+    beeee8a7-e5e8-4a0b-b775-bf05f1c5ba06:
+        information: none_antivirus_none
+        ask: Missing
+        question:
+            - b08047b9-f5d3-4851-8360-7e55efc955af
+    a76af321-e840-4852-9f7b-bc803b4904e9:
+        information: none_database_none
+        ask: Missing
+        question:
+            - 94fe0506-2957-4cde-8842-b612f856d279
+    97175eda-c5a0-45b0-ad6d-42ead89bff46:
+        information: aws_none_cloudtrail
+        ask: Missing
+        question:
+            - e6564297-e495-4eb1-9e34-91d55e35d446
+    4e3952e4-1f9b-4385-a58d-3c56a80afcb7:
+        information: azureactivity,auditlogs,signinlogs,activitylogs
+        ask: Missing
+        question:
+            - f5d53104-7630-4d2d-bb61-8365432de31b
+    ad9bf792-f933-4f2f-bebb-3e39e2603cb6:
+        information: gcp_none_gcp.audit
+        ask: Missing
+        question:
+            - aee5b6f9-5112-4a74-bc8f-ffa821243751
+    f7e9e2bc-454c-4783-b0c9-061558500ada:
+        information: github_none_audit
+        ask: Missing
+        question:
+            - 381293df-6100-4fc8-8260-262bf9e9605d
+    b934c15a-d3b4-4254-a502-46c86f20c9ce:
+        information: google_workspace_none_google_workspace.admin
+        ask: Missing
+        question:
+            - 330be6c8-36e0-4bad-89ce-a650f8886a29
+    fa3b75c2-03b4-4faa-8a13-46490c6dee98:
+        information: m365_none_threat_management
+        ask: Missing
+        question:
+            - 0f5dc751-064b-4d9d-b7b6-ca8885e305c8
+    2172ac1e-d811-4c41-8671-4525a6d7e0f3:
+        information: m365_none_threat_detection
+        ask: Missing
+        question:
+            - b6cd0eb0-6073-4af2-90bb-eddd59ec6b3f
+    e162c99f-17ae-45fd-956f-c7a5668d714c:
+        information: m365_none_exchange
+        ask: Missing
+        question:
+            - cb59b4c6-2b58-4ea3-92ce-64d2257bb001
+    d688876f-06e2-45e9-a871-0f617b899718:
+        information: okta_none_okta
+        ask: Missing
+        question:
+            - dd3a552e-7793-479e-ad2c-807257644f72
+    e2ec639c-de7f-465b-9728-738237cce5f7:
+        information: onelogin_none_onelogin.events
+        ask: Missing
+        question:
+            - 69293574-f615-4582-9272-9f6aa2ee1d03
+    db691150-7e4a-43de-9b17-c50787f6d892:
+        information: qualys_none_none
+        ask: Missing
+        question:
+            - d56166e2-d35b-4b95-90da-f5c57ed7a139
+    8a086622-a75f-41a4-909c-b4eb70f68e3c:
+        information: none_none_netflow
+        ask: Missing
+        question:
+            - 2a86ae59-6eec-4e29-af85-49ba80a70aba
+    1c586617-ccef-4274-ab26-a9e707f552eb:
+        information: linux_none_auditd
+        ask: Missing
+        question:
+            - b4c9b09d-a5d1-4067-a769-d612dbf756fb
+    714adc3e-cbdc-4907-a3ee-832357ba2e9e:
+        information: linux_none_none
+        ask: Missing
+        question:
+            - 4dc124b2-561b-47d2-a8b3-b508129a7d53
+    92e67a63-b06e-4a62-98a7-b2d7f8891971:
+        information: linux_none_auth
+        ask: Missing
+        question:
+            - 8c7d1638-b736-45a5-b9a8-4074f0c8b64d
+    c600eb8f-3063-4078-ae8d-e6e6b2438afe:
+        information: linux_none_clamav
+        ask: Missing
+        question:
+            - 7f032177-50cb-4d77-a35c-fad06b15b4da
+    aa15bef2-cae3-4a69-8e8e-a836b7bb73e3:
+        information: linux_none_cron
+        ask: Missing
+        question:
+            - f3a15113-66d5-4a80-bc22-d9d783a41348
+    cc79ea62-140d-4acc-8adc-311995446e85:
+        information: linux_none_guacamole
+        ask: Missing
+        question:
+            - fd20ff7c-ff70-4b79-86f4-42b826a955e5
+    c76bcba4-69ec-406b-bf6b-139cfdceddd3:
+        information: linux_none_sshd
+        ask: Missing
+        question:
+            - e6311e9d-fb85-4616-b4af-28f630530eb6
+    1bb4e56c-735e-43c7-94e1-6f96537e9ef3:
+        information: linux_none_sudo
+        ask: Missing
+        question:
+            - 610e049e-c02b-48d3-993c-14425b9d9e4a
+    7ca7d81e-b301-4674-b86d-756fe73aaedd:
+        information: linux_none_syslog
+        ask: Missing
+        question:
+            - 6f5abadd-8505-48fa-b2e5-ae83a33f36dd
+    4b0a0a28-4aa1-4353-a977-4f7675df93ae:
+        information: linux_none_vsftpd
+        ask: Missing
+        question:
+            - dbe55039-b99d-4709-909c-db19b81b9f5d
+    a020a537-60eb-4ced-9318-c49eb28bc290:
+        information: linux_file_event_none
+        ask: Missing
+        question:
+            - 9ac1b67c-4cba-498d-890e-51a58de1a3d9
+    67f33595-a279-4ed6-9f09-bbbf6eafd4ed:
+        information: linux_network_connection_none
+        ask: Missing
+        question:
+            - c086b7e8-cb5b-46f2-ad1a-52cef092a69c
+    98b6d220-2fdf-4a4c-866c-8956d8eb071f:
+        information: linux_process_creation_none
+        ask: Missing
+        question:
+            - 9507e003-82af-4a53-9030-8ec138fddfb4
+    a53c1a1a-91bc-4c77-a07b-cb6d70449a32:
+        information: macos_file_event_none
+        ask: Missing
+        question:
+            - 2bef0459-8ea6-4c1f-8726-45ad1bce05bf
+    e5f54113-2d44-4086-8174-bb0a9ef88803:
+        information: macos_process_creation_none
+        ask: Missing
+        question:
+            - d8244fd8-239a-4796-bff6-02e6d0333aaa
+    cb52601d-5a6d-43b4-8df2-a811d05c1c2a:
+        information: cisco_accounting_aaa
+        ask: Missing
+        question:
+            - 98167a02-0c62-49b7-a5a5-fc49ea1aa9e6
+    3c2d0218-682a-4d13-968c-14a38c51dce5:
+        information: cisco_none_aaa
+        ask: Missing
+        question:
+            - 70f475f3-5cfc-4f4d-b0aa-549a2e0808e4
+    0800b8c9-48ee-45b4-8bec-2941c4e0bb01:
+        information: cisco_none_bgp
+        ask: Missing
+        question:
+            - 71d55a99-1289-4600-8340-e608291fbf11
+    f0a63bb9-ac4b-4d3b-a18e-9ef2fd2e3d1c:
+        information: cisco_none_ldp
+        ask: Missing
+        question:
+            - f72b5f1e-66f5-4662-a7c0-2ad75773328b
+    cd9361fa-cb7a-4918-beb2-5abd716b70ed:
+        information: none_dns_none
+        ask: Missing
+        question:
+            - 124e087b-b91f-4048-bac5-89c4810160de
+    7c7b90a2-e5cc-4c93-83c2-f232191c7c9f:
+        information: none_firewall_none
+        ask: Missing
+        question:
+            - 8b31315b-e222-443a-a625-b4ff44274fa9
+    2135561a-f9d1-4f85-953b-c38470389e3a:
+        information: huawei_none_bgp
+        ask: Missing
+        question:
+            - 90f214ea-d51b-4457-9653-31c558f5cb39
+    2ef3dafb-6466-4efb-8efd-aed876b05e07:
+        information: juniper_none_bgp
+        ask: Missing
+        question:
+            - 864b110b-5b90-4f44-b41d-eb725287b011
+    275c68e1-eefc-4bf0-aae8-646b8776a686:
+        information: zeek_none_dce_rpc
+        ask: Missing
+        question:
+            - 4b9e2a18-6629-4ca0-8981-924839ef670f
+    fdf678ff-ea70-46f4-8b01-83028d964a38:
+        information: zeek_none_smb_files
+        ask: Missing
+        question:
+            - 7c0e7b95-773a-4e0a-b622-df05db6076d1
+    1718a67a-0f9c-4ab3-9af8-2db8c5d83bb1:
+        information: zeek_none_x509
+        ask: Missing
+        question:
+            - a251c8d3-dcea-49d8-802d-4ad2c1929377
+    c838de8c-1452-451c-a607-d9dd436c63b7:
+        information: zeek_none_dns
+        ask: Missing
+        question:
+            - 2fcea2d2-2e5c-4c73-9c3a-0477e5fefaaa
+    415493fa-bccf-4ece-a736-c06d10ee87f2:
+        information: zeek_none_http
+        ask: Missing
+        question:
+            - c8036ea4-f41e-4b6e-9645-849e233a57d5
+    ecf500be-45f9-4d25-b4d9-874aa1d763b7:
+        information: zeek_none_rdp
+        ask: Missing
+        question:
+            - 19be66fd-d524-4ab1-891c-ebfd4ae5d102
+    4b351da2-fd2a-4cec-8a78-525e15594b42:
+        information: zeek_none_kerberos
+        ask: Missing
+        question:
+            - 9e308780-d4bf-48af-8f6c-36d7c8e64829
+    e4b5017f-368d-404a-a8d9-6df172a01d73:
+        information: none_none_apache
+        ask: Missing
+        question:
+            - 4a5d330f-5d0a-427e-9d7f-da16c23369c8
+    f84cc9d6-7c06-41ae-83e8-dfdff56207f0:
+        information: none_proxy_none
+        ask: Missing
+        question:
+            - 173d60e4-5034-4c09-b7f3-a06485e5ee50
+    cce743e8-5b59-4fdc-9f96-ab241a7fa457:
+        information: none_webserver_none
+        ask: Missing
+        question:
+            - 57392727-cc74-48d3-8065-9e4b0269f5e3
+    0e614bae-308b-4adc-8d41-b1d5a7e62f4d:
+        information: windows_none_iis
+        ask: Missing
+        question:
+            - 7178d4ca-bddc-40ab-b970-9937e7cc615d
+    849908ca-1bb4-4fbb-9a14-2cf39ca14bd3:
+        information: windows_none_none
+        ask: Missing
+        question:
+            - 55cf1449-5508-4475-8986-9a0a6cd12e14
+    849d846a-cb70-47a1-bb08-0bcb39a7b6fd:
+        information: windows_none_application
+        ask: Missing
+        question:
+            - c7d1d8ee-a6d9-478e-b4b4-95d6859a51eb
+    deff6530-18da-4e2a-9537-7e09269f8c32:
+        information: windows_none_applocker
+        ask: Missing
+        question:
+            - 70af88ef-dc48-4414-8531-6f72e269a310
+    90e0712f-7f54-4a3a-bdba-8ac94bc4bffa:
+        information: windows_none_appmodel-runtime
+        ask: Missing
+        question:
+            - ea65c740-187c-4e7f-ab98-5f8adb54688b
+    e230eee3-1495-418e-a34e-cd9d96ddd7ca:
+        information: windows_none_appxdeployment-server
+        ask: Missing
+        question:
+            - e238c523-0eb9-4520-b811-88b452af9913
+    3e2e36ce-57be-47f1-bab3-d28d4e8187eb:
+        information: windows_none_appxpackaging-om
+        ask: Missing
+        question:
+            - 981ec278-2ea3-4c48-adc5-dfd4ef1c1a5e
+    e701912c-d231-4d70-8ecb-56628bd462e7:
+        information: windows_none_bits-client
+        ask: Missing
+        question:
+            - be98c1c0-a095-47ad-bc8b-e7fc70626d40
+    be17ac03-f29b-4f0f-9d96-92b56fcd4bae:
+        information: windows_none_codeintegrity-operational
+        ask: Missing
+        question:
+            - dad19fcb-57f1-4228-8653-25020ed80e18
+    1e437f71-1db0-44ac-a888-cc1d9aa52fe8:
+        information: windows_none_diagnosis-scripted
+        ask: Missing
+        question:
+            - 28bd53ec-621e-44a4-9d55-dd7f1c5ab22b
+    78d450c4-b541-40e8-8a59-e105387a84ea:
+        information: windows_none_dns-client
+        ask: Missing
+        question:
+            - 55bb84a1-8bab-41c6-adb4-870813011245
+    459597cd-e166-454c-8362-9ecca2243b16:
+        information: windows_none_dns-server
+        ask: Missing
+        question:
+            - 7f9378f5-0a8b-4928-8e90-303327586ef7
+    1e461634-6eb8-4e08-9258-3333d9168734:
+        information: windows_none_dns-server-analytic
+        ask: Missing
+        question:
+            - d1294d15-202c-4fb8-99cb-cf7f1076afcc
+    ff9798b2-c5bd-4660-911f-ac9a18a015ff:
+        information: windows_none_driver-framework
+        ask: Missing
+        question:
+            - 3924088f-8e12-4bf3-89ea-9ea13ea58f5d
+    1d15eb5c-aa32-4d12-abac-f0bafdf4a6e1:
+        information: windows_none_firewall-as
+        ask: Missing
+        question:
+            - 4bc782d1-7fa8-4910-aa30-2f20617db8cc
+    092a769a-1f68-4c3a-9e18-969237b87fd9:
+        information: windows_none_ldap_debug
+        ask: Missing
+        question:
+            - 9088f1f1-6a0d-4ebb-9c7f-a675d9a42542
+    69ed8945-bc66-4f7f-8a5b-8f50b5757774:
+        information: windows_none_lsa-server
+        ask: Missing
+        question:
+            - 6e0429a1-3826-4ee4-a59a-eec529eb24f6
+    d3f93f21-2cd0-4b1b-b3bd-a5345923dea3:
+        information: windows_none_msexchange-management
+        ask: Missing
+        question:
+            - adb24f3d-2724-4f6d-ac89-b1852126b38b
+    9441d6f7-2263-4ee5-ab80-2de9737fe413:
+        information: windows_none_ntlm
+        ask: Missing
+        question:
+            - 4a1871a5-0874-40b3-ace9-faecd4f86a34
+    3e827d90-3bab-4c8b-9f48-5b8c3fcd724c:
+        information: windows_none_openssh
+        ask: Missing
+        question:
+            - b9c9005b-42a1-41fa-aec2-10aab62d40de
+    e0278b36-b35a-4716-9a4c-f309d3ca89ef:
+        information: windows_none_printservice-admin
+        ask: Missing
+        question:
+            - c0f60c98-3047-4a76-bf4d-52c20c148959
+    21f2695d-494c-46ed-8a5d-31407d02b6b5:
+        information: windows_none_printservice-operational
+        ask: Missing
+        question:
+            - 85f7351e-3edb-4b1e-bed6-35c92b8ee70e
+    a7a0fcdf-ee5b-4fe0-ab04-cb78f4452b30:
+        information: windows_none_security
+        ask: Missing
+        question:
+            - 7930be98-205f-4a6a-a20a-68ea5997f6e5
+    41d72892-3336-4619-bbcb-8cd9d7f50d04:
+        information: windows_none_security-mitigations
+        ask: Missing
+        question:
+            - 44fc4355-4029-46a1-affe-c433e79d5aac
+    d89d88b7-e40f-4b81-ad7a-05c6ed22ad48:
+        information: windows_none_microsoft-servicebus-client
+        ask: Missing
+        question:
+            - 757d961f-9490-4536-a242-dfcda0252d84
+    fd4237b2-15dc-4217-aeda-95cf21bc33cc:
+        information: windows_none_shell-core
+        ask: Missing
+        question:
+            - 9fae1872-5924-4cec-b43e-666977b6f5c8
+    8d23296c-1dc4-4187-9934-2fa9abad50ea:
+        information: windows_none_smbclient-connectivity
+        ask: Missing
+        question:
+            - 1fc29f1f-4cf4-429a-b2c4-2af4e39f988e
+    85956c69-a01f-4065-be43-162ca8c96288:
+        information: windows_none_smbclient-security
+        ask: Missing
+        question:
+            - 7e11fe62-8103-42b5-a0ab-6698d48ec4bc
+    af22ca54-e669-4918-a338-66aedb8c57cc:
+        information: windows_none_system
+        ask: Missing
+        question:
+            - 733db144-b29c-42da-8516-b2af2d383b3c
+    be66a0f0-ebf8-44d6-9a04-da286967c9d0:
+        information: windows_none_taskscheduler
+        ask: Missing
+        question:
+            - 4b59dc37-5591-4f8b-9245-ca92ef805a27
+    e739901d-f852-4c38-9d19-43e912b2f57a:
+        information: windows_none_terminalservices-localsessionmanager
+        ask: Missing
+        question:
+            - 4dbae5b1-894c-4f08-96e5-c306a280b0e2
+    3f48db90-e6a7-4746-821d-59c875cf3f0a:
+        information: windows_none_windefend
+        ask: Missing
+        question:
+            - 28030d23-5cc6-43e0-a48b-af771e47179d
+    2e198004-4b64-4de2-b7af-045bae05d736:
+        information: windows_none_wmi
+        ask: Missing
+        question:
+            - ba6d09dc-5e5d-4a2e-883b-2c4a110d5a3f
+    d4635c67-a489-49c8-8c6c-3d35c7bcf1f7:
+        information: windows_file_rename_none
+        ask: Missing
+        question:
+            - f67355ad-0cff-474b-a9d6-4fe854330b59
+    d31ebacc-8a86-4380-a7ca-9ee44e7ed0ed:
+        information: ps_classic_start,powershell-classic,ps_classic_provider_start
+        ask: Missing
+        question:
+            - 6f5a2e61-66f6-46b7-b848-528da2ab4fb0
+
+

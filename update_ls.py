@@ -1,4 +1,5 @@
-#Very bad script
+# Very bad script
+# Test done with Python 3.11.3 on windows 11
 import pathlib
 
 from ruamel.yaml import YAML
@@ -65,36 +66,70 @@ def update_boolean_questions(data,default_ask,logsources):
             logsources_done.append(uuid_key)
             print(f"Missing question for {fhash} add with uuid {new_uuid4}")
 
+def update_type_questions(data,default_ask,question):
+    boolean_done = []
+    boolean_missing = []
+    for uuid_key in data:
+        for uuid_type in data[uuid_key]['question']:
+            boolean_done.append(uuid_type)
+
+    for uuid_key in question:
+        if uuid_key in boolean_done:
+            pass
+        else:
+            boolean_missing.append(uuid_key)
+            new_uuid4 = str(uuid.uuid4())
+            data[new_uuid4] = {}
+            data[new_uuid4]['information'] = question[uuid_key]['information']
+            data[new_uuid4]['ask'] = default_ask
+            data[new_uuid4]['question'] = [uuid_key]
+            boolean_done.append(uuid_key)
+            print(f"Missing selection question for {question[uuid_key]['information']} add with uuid {new_uuid4}")
+
 def get_number_default_question(data,default_ask)->int:
     int_q = 0
     for uuid_key in data:
         if data[uuid_key]['ask'] == default_ask :
             int_q += 1
     return int_q
-        
+
 
 print("Do not use unless you realy want it")
 print("Open logsource.yml")
 with open('logsource.yml',encoding='UTF-8') as file:
     yaml_database = yaml.load(file)
 
+print("Check sigma rules")
 update_logsources(yaml_database["logsources"],'../../sigma/rules')
 update_logsources(yaml_database["logsources"],'../../sigma/rules-emerging-threats')
 update_logsources(yaml_database["logsources"],'../../sigma/rules-threat-hunting')
 
-update_boolean_questions(yaml_database['questions'],"Missing information to ask",yaml_database["logsources"])
+print("Check missing boolean logsource question")
+update_boolean_questions(yaml_database['questions_logsources'],"Missing information to ask",yaml_database["logsources"])
+
+print("Check missing question to select list of boolean question")
+update_type_questions(yaml_database['questions_type'],"Missing",yaml_database['questions_logsources'])
 
 print("Save logsource.yml with no backup :)")
 with open('logsource.yml','w',encoding='UTF-8',newline='') as file_out:
     yaml.dump(yaml_database,file_out)
 
-print(f"You have {len(yaml_database['logsources'])} Logsources information")
-print(f"You have {len(yaml_database['questions'])} boolean logsource questions")
-
 print("-----------------------")
+print("| Data Information")
+print(f"You have {len(yaml_database['logsources'])} Logsources")
+print(f"You have {len(yaml_database['questions_logsources'])} logsource questions")
+print(f"You have {len(yaml_database['questions_type'])} type questions")
 
-to_work = get_number_default_question(yaml_database['questions'],"Missing information to ask")
+print("\n-----------------------")
+print("| Working to do")
+to_work = get_number_default_question(yaml_database['questions_logsources'],"Missing information to ask")
 if to_work == 0 :
-    print(f"It is a great day , there is no question with the default text")
+    print(f"It is a great day , there is no logsource question with the default text")
 else:
-    print(f"You have {to_work} question(s) with the default text")
+    print(f"You have {to_work} logsource question(s) with the default text")
+
+to_work = get_number_default_question(yaml_database['questions_type'],"Missing")
+if to_work == 0 :
+    print(f"It is a great day , there is no type question with the default text")
+else:
+    print(f"You have {to_work} type question(s) with the default text")
