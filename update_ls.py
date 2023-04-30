@@ -1,6 +1,7 @@
 # Very bad script
 # Test done with Python 3.11.3 on windows 11
 import pathlib
+import argparse
 
 from ruamel.yaml import YAML
 from collections import OrderedDict
@@ -19,7 +20,6 @@ class Quizz():
         self.yaml.preserve_quotes =True
         self.yaml.width = 2000
         self.yaml.indent(mapping=4, sequence=4, offset=4)
-
     
     def load(self,filename):
         with open(filename,encoding='UTF-8') as file_in:
@@ -41,7 +41,6 @@ class Quizz():
         for uuid_key in self.yaml_data['logsources']:
             fhash = self.__get_fhash(self.yaml_data['logsources'][uuid_key])
             self.fhash.append(fhash)
-
 
     def read_sigma_file(self,path):
         rules_list = [yml for yml in pathlib.Path(path).glob('**/*.yml')]
@@ -94,65 +93,78 @@ class Quizz():
                 uuid_done.append(uuid_key)
                 print(f"Missing question for {information} add with uuid {new_uuid4}")
 
+def set_argparser():
+    argparser = argparse.ArgumentParser(description="Select logsource with simple questions",
+                                        formatter_class=argparse.RawTextHelpFormatter)
+    argparser.add_argument("--update", "-u", action="store_true", help="Update logsource from sigma rules")
 
-print("Do not use unless you realy want it")
-logsource = Quizz()
-print("Open logsource.yml")
-logsource.load('logsource.yml')
+    return argparser
 
-print("Load sigma rules")
-logsource.read_sigma_file('../../sigma/rules')
-logsource.read_sigma_file('../../sigma/rules-emerging-threats')
-logsource.read_sigma_file('../../sigma/rules-threat-hunting')
+def main():
+    argparser = set_argparser()
+    cmdargs = argparser.parse_args()
 
-print("Check missing boolean logsource question")
-logsource.create_missing_question(section_name='questions_logsources',
-                                  section_ref='logsources',
-                                  default_ask="Missing",
-                                  sigma=True
-                                  )
+    logsource = Quizz()
+    
+    print("Open logsource.yml")
+    logsource.load('logsource.yml')
 
-print("Check missing question to select list of logsource question")
-logsource.create_missing_question(section_name='questions_type',
-                                  section_ref='questions_logsources',
-                                  default_ask="Missing",
-                                  sigma=False
-                                  )
+    if cmdargs.update:
+        print("Load sigma rules")
+        logsource.read_sigma_file('../../sigma/rules')
+        logsource.read_sigma_file('../../sigma/rules-emerging-threats')
+        logsource.read_sigma_file('../../sigma/rules-threat-hunting')
 
-print("Check missing question to select list of type question")
-logsource.create_missing_question(section_name='question_general',
-                                  section_ref='questions_type',
-                                  default_ask="Missing",
-                                  sigma=False
-                                  )
+        print("Check missing boolean logsource question")
+        logsource.create_missing_question(section_name='questions_logsources',
+                                        section_ref='logsources',
+                                        default_ask="Missing",
+                                        sigma=True
+                                        )
 
-print("Save logsource.yml with no backup :)")
-logsource.save('logsource.yml')
+        print("Check missing question to select list of logsource question")
+        logsource.create_missing_question(section_name='questions_type',
+                                        section_ref='questions_logsources',
+                                        default_ask="Missing",
+                                        sigma=False
+                                        )
 
-print("-----------------------")
-print("| Data Information")
-print(f"You have {len(logsource.yaml_data['logsources'])} Logsources")
-print(f"You have {len(logsource.yaml_data['questions_logsources'])} logsource questions")
-print(f"You have {len(logsource.yaml_data['questions_type'])} type questions")
-print(f"You have {len(logsource.yaml_data['question_general'])} general questions")
+        print("Check missing question to select list of type question")
+        logsource.create_missing_question(section_name='question_general',
+                                        section_ref='questions_type',
+                                        default_ask="Missing",
+                                        sigma=False
+                                        )
 
-print("\n-----------------------")
-print("| Working to do")
-to_work = logsource.get_number_default_question('questions_logsources',"Missing")
-if to_work == 0 :
-    print(f"It is a great day , there is no logsource question with the default text")
-else:
-    print(f"You have {to_work} logsource question(s) with the default text")
+        print("Save logsource.yml with no backup :)")
+        logsource.save('logsource.yml')
 
-to_work = logsource.get_number_default_question('questions_type',"Missing")
-if to_work == 0 :
-    print(f"It is a great day , there is no type question with the default text")
-else:
-    print(f"You have {to_work} type question(s) with the default text")
+    print("-----------------------")
+    print("| Data Information")
+    print(f"You have {len(logsource.yaml_data['logsources'])} Logsources")
+    print(f"You have {len(logsource.yaml_data['questions_logsources'])} logsource questions")
+    print(f"You have {len(logsource.yaml_data['questions_type'])} type questions")
+    print(f"You have {len(logsource.yaml_data['question_general'])} general questions")
 
-to_work = logsource.get_number_default_question('question_general',"Missing")
-if to_work == 0 :
-    print(f"It is a great day , there is no genral question with the default text")
-else:
-    print(f"You have {to_work} general question(s) with the default text")
+    print("\n-----------------------")
+    print("| Working to do")
+    to_work = logsource.get_number_default_question('questions_logsources',"Missing")
+    if to_work == 0 :
+        print(f"It is a great day , there is no logsource question with the default text")
+    else:
+        print(f"You have {to_work} logsource question(s) with the default text")
 
+    to_work = logsource.get_number_default_question('questions_type',"Missing")
+    if to_work == 0 :
+        print(f"It is a great day , there is no type question with the default text")
+    else:
+        print(f"You have {to_work} type question(s) with the default text")
+
+    to_work = logsource.get_number_default_question('question_general',"Missing")
+    if to_work == 0 :
+        print(f"It is a great day , there is no genral question with the default text")
+    else:
+        print(f"You have {to_work} general question(s) with the default text")
+
+if __name__ == "__main__":
+    main()
