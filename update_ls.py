@@ -110,7 +110,7 @@ class yaml_file:
         return int_q
 
     def __create_missing_question(
-        self, section_name: str, section_ref: str, default_ask: str
+        self, section_name: str, section_ref: str, default_ask: str,sigma=False
     ):
         uuid_done = []
         for uuid_key in self.yaml_data[section_name]:
@@ -136,7 +136,7 @@ class yaml_file:
 
     def create_all_missing_question(self, missing_ask: str):
         print(f'Working on {SECTION_QLOGSOURCE_NAME} section')
-        self.__create_missing_question(SECTION_QLOGSOURCE_NAME,SECTION_LOGSOURCE_NAME,missing_ask)
+        self.__create_missing_question(SECTION_QLOGSOURCE_NAME,SECTION_LOGSOURCE_NAME,missing_ask,True)
 
         print(f'Working on {SECTION_QTYPE_NAME} section')
         self.__create_missing_question(SECTION_QTYPE_NAME,SECTION_QLOGSOURCE_NAME,missing_ask)
@@ -179,10 +179,20 @@ class quiz:
         pass
 
     def question(self,text)->bool:
-        answer = input(f"{text} [y/N] ?")
+        answer = input(f"{text} [y/N] ? ")
         if answer.lower() == "y":
             return True
         return False 
+
+    def section_quiz(self,data,ref) -> list:
+        if len(ref) == 0:
+            ref= list(data.keys())
+        uuid_select =[]
+        for askme in ref:
+            if self.question(data[askme]['ask']):
+               uuid_select.extend(data[askme]['uuid_ref']) 
+
+        return uuid_select
 
 def set_argparser():
     argparser = argparse.ArgumentParser(
@@ -194,6 +204,9 @@ def set_argparser():
     )
     argparser.add_argument(
         "--info", "-i", action="store_true", help="Get information about logsource.yml"
+    )
+    argparser.add_argument(
+        "--quiz", "-q", action="store_true", help="Launch the cli quiz"
     )
 
     return argparser
@@ -268,6 +281,26 @@ def main():
         else:
             print(f"You have {to_work} general question(s) with the default text")
 
+    if cmdargs.quiz:
+        myquiz= quiz()
+        print ("Let's start for 3 steps")
+        print ("Step 1 : General question")
+        q_general = myquiz.section_quiz(logsource.yaml_data[SECTION_QGENERAL_NAME],[])
+        if len(q_general) == 0 :
+            print("Noting to do , bye")
+            exit(0)
+
+        print ("Step 2 : More focus question")
+        q_type = myquiz.section_quiz(logsource.yaml_data[SECTION_QTYPE_NAME],q_general)
+        if len(q_type) == 0 :
+            print("Noting to do , bye")
+            exit(0)
+        
+        print ("Step 3 : Select the logsource")
+        q_log = myquiz.section_quiz(logsource.yaml_data[SECTION_QLOGSOURCE_NAME],q_type)
+        if len(q_log) == 0 :
+            print("Noting to do , bye")
+            exit(0)
 
 if __name__ == "__main__":
     main()
