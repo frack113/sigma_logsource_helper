@@ -673,87 +673,87 @@ questions_logsources:
             - 597a5a3a-2cee-4064-bf0f-7a22f35b1e2c
     2bef0459-8ea6-4c1f-8726-45ad1bce05bf:
         information: macos_file_event_none
-        ask: Missing information to ask
+        ask: Missing
         logsource:
             - 864d24e3-f55c-4dc6-967e-4453f75c90b2
     d8244fd8-239a-4796-bff6-02e6d0333aaa:
         information: macos_process_creation_none
-        ask: Missing information to ask
+        ask: Missing
         logsource:
             - b6d283a0-59e1-4bf9-952d-35728c31e8b9
     98167a02-0c62-49b7-a5a5-fc49ea1aa9e6:
         information: cisco_accounting_aaa
-        ask: Missing information to ask
+        ask: Missing
         logsource:
             - 8e881b75-4d3d-4fe7-bf3f-71428e1167f3
     70f475f3-5cfc-4f4d-b0aa-549a2e0808e4:
         information: cisco_none_aaa
-        ask: Missing information to ask
+        ask: Missing
         logsource:
             - c9d3b39f-4983-4d1a-bf6d-611e6cd9a19a
     71d55a99-1289-4600-8340-e608291fbf11:
         information: cisco_none_bgp
-        ask: Missing information to ask
+        ask: Missing
         logsource:
             - b8aa6586-764a-4640-a3fe-024140cce597
     f72b5f1e-66f5-4662-a7c0-2ad75773328b:
         information: cisco_none_ldp
-        ask: Missing information to ask
+        ask: Missing
         logsource:
             - 7c8fe139-487e-46e5-878e-f33018f55bc4
     124e087b-b91f-4048-bac5-89c4810160de:
         information: none_dns_none
-        ask: Missing information to ask
+        ask: Missing
         logsource:
             - dc4afbc9-7b1d-4337-8329-6ab7b2db6b08
     8b31315b-e222-443a-a625-b4ff44274fa9:
         information: none_firewall_none
-        ask: Missing information to ask
+        ask: Missing
         logsource:
             - b1b50bb8-457f-4f1b-a4c6-ba0823323d3a
     90f214ea-d51b-4457-9653-31c558f5cb39:
         information: huawei_none_bgp
-        ask: Missing information to ask
+        ask: Missing
         logsource:
             - e613739d-a8d3-4acf-80e2-58a7b8a01541
     864b110b-5b90-4f44-b41d-eb725287b011:
         information: juniper_none_bgp
-        ask: Missing information to ask
+        ask: Missing
         logsource:
             - 9b346ca7-f2a1-4cb4-8c35-eed7e3c00c0a
     4b9e2a18-6629-4ca0-8981-924839ef670f:
         information: zeek_none_dce_rpc
-        ask: Missing information to ask
+        ask: Missing
         logsource:
             - 6dce903b-98f0-401d-bbf4-31da1ad89d12
     7c0e7b95-773a-4e0a-b622-df05db6076d1:
         information: zeek_none_smb_files
-        ask: Missing information to ask
+        ask: Missing
         logsource:
             - 3899b7e3-86a3-4b2e-8796-978a7ccdf975
     a251c8d3-dcea-49d8-802d-4ad2c1929377:
         information: zeek_none_x509
-        ask: Missing information to ask
+        ask: Missing
         logsource:
             - b23e2e30-2c63-4283-b4b2-ccd1aac0933f
     2fcea2d2-2e5c-4c73-9c3a-0477e5fefaaa:
         information: zeek_none_dns
-        ask: Missing information to ask
+        ask: Missing
         logsource:
             - 88aec8d0-2c00-44ff-a920-3582719c3d7e
     c8036ea4-f41e-4b6e-9645-849e233a57d5:
         information: zeek_none_http
-        ask: Missing information to ask
+        ask: Missing
         logsource:
             - 80442537-63af-47b0-8ade-5d4ded718ec1
     19be66fd-d524-4ab1-891c-ebfd4ae5d102:
         information: zeek_none_rdp
-        ask: Missing information to ask
+        ask: Missing
         logsource:
             - a4e5fe33-a360-416c-8829-eb531d8b3dd8
     9e308780-d4bf-48af-8f6c-36d7c8e64829:
         information: zeek_none_kerberos
-        ask: Missing information to ask
+        ask: Missing
         logsource:
             - 1ee4fb67-f7b3-4bed-8778-950e6e71bb56
     4a5d330f-5d0a-427e-9d7f-da16c23369c8:
@@ -773,7 +773,7 @@ questions_logsources:
             - 73965e93-11ea-4faa-bea1-8bf4b75c2d6e
     7178d4ca-bddc-40ab-b970-9937e7cc615d:
         information: windows_none_iis
-        ask: Missing information to ask
+        ask: Missing
         logsource:
             - 5ab25500-4785-40d7-b07d-c8a177c61184
     55cf1449-5508-4475-8986-9a0a6cd12e14:
@@ -911,7 +911,7 @@ questions_logsources:
             - 2181dc25-4623-467f-91f9-dd6ff0fc963f
     1fc29f1f-4cf4-429a-b2c4-2af4e39f988e:
         information: windows_none_smbclient-connectivity
-        ask: Missing information to ask
+        ask: Missing
         logsource:
             - 05388908-6d27-440a-b062-70f7efce6523
     7e11fe62-8103-42b5-a0ab-6698d48ec4bc:
@@ -1566,5 +1566,197 @@ questions_type:
         ask: Missing
         question:
             - 6f5a2e61-66f6-46b7-b848-528da2ab4fb0
-
-
+question_general:
+    0a613fec-b411-45c0-a7f1-5a935fd65437:
+        information: select all the Windows sysmon event
+        ask: Do you need windows rules
+        question:
+            - 716d9db2-c3bb-4680-ad84-6d52ed2520d6
+            - 0d1335b1-da48-4147-b212-1f503289c2a1
+            - 0e614bae-308b-4adc-8d41-b1d5a7e62f4d
+            - 849908ca-1bb4-4fbb-9a14-2cf39ca14bd3
+            - 849d846a-cb70-47a1-bb08-0bcb39a7b6fd
+            - deff6530-18da-4e2a-9537-7e09269f8c32
+            - 90e0712f-7f54-4a3a-bdba-8ac94bc4bffa
+            - e230eee3-1495-418e-a34e-cd9d96ddd7ca
+            - 3e2e36ce-57be-47f1-bab3-d28d4e8187eb
+            - e701912c-d231-4d70-8ecb-56628bd462e7
+            - be17ac03-f29b-4f0f-9d96-92b56fcd4bae
+            - 1e437f71-1db0-44ac-a888-cc1d9aa52fe8
+            - 78d450c4-b541-40e8-8a59-e105387a84ea
+            - 459597cd-e166-454c-8362-9ecca2243b16
+            - 1e461634-6eb8-4e08-9258-3333d9168734
+            - ff9798b2-c5bd-4660-911f-ac9a18a015ff
+            - 1d15eb5c-aa32-4d12-abac-f0bafdf4a6e1
+            - 092a769a-1f68-4c3a-9e18-969237b87fd9
+            - 69ed8945-bc66-4f7f-8a5b-8f50b5757774
+            - d3f93f21-2cd0-4b1b-b3bd-a5345923dea3
+            - 9441d6f7-2263-4ee5-ab80-2de9737fe413
+            - 3e827d90-3bab-4c8b-9f48-5b8c3fcd724c
+            - e0278b36-b35a-4716-9a4c-f309d3ca89ef
+            - 21f2695d-494c-46ed-8a5d-31407d02b6b5
+            - a7a0fcdf-ee5b-4fe0-ab04-cb78f4452b30
+            - 41d72892-3336-4619-bbcb-8cd9d7f50d04
+            - d89d88b7-e40f-4b81-ad7a-05c6ed22ad48
+            - fd4237b2-15dc-4217-aeda-95cf21bc33cc
+            - 8d23296c-1dc4-4187-9934-2fa9abad50ea
+            - 85956c69-a01f-4065-be43-162ca8c96288
+            - af22ca54-e669-4918-a338-66aedb8c57cc
+            - be66a0f0-ebf8-44d6-9a04-da286967c9d0
+            - e739901d-f852-4c38-9d19-43e912b2f57a
+            - 3f48db90-e6a7-4746-821d-59c875cf3f0a
+            - 2e198004-4b64-4de2-b7af-045bae05d736
+            - d4635c67-a489-49c8-8c6c-3d35c7bcf1f7
+            - d31ebacc-8a86-4380-a7ca-9ee44e7ed0ed
+    15aa5c87-dbab-44c5-9495-f0d30b3b3e4b:
+        information: django_application_none
+        ask: Missing
+        question:
+            - c19d1497-317f-424e-a378-d6c9af2c789b
+    f6cd1ed1-0c98-4447-bfce-a00effaef59e:
+        information: jvm_application_none
+        ask: Missing
+        question:
+            - 2670153d-cfcf-44a1-a308-71823b99dc71
+    695df378-b43b-4157-bf28-0c49f733a0f8:
+        information: nodejs_application_none
+        ask: Missing
+        question:
+            - 8ca02866-d082-4616-b1b0-ea5518d90cff
+    312b8740-0523-4395-be1b-9742934749df:
+        information: python_application_none
+        ask: Missing
+        question:
+            - 6e40007f-42e7-41ac-9e4a-f92a97bd926b
+    d166bd1c-f1b4-4663-868f-80c0769b390d:
+        information: rpc_firewall_application_none
+        ask: Missing
+        question:
+            - 84afd37b-0efe-4076-9527-8b2690b5a628
+    4e789b19-f8ee-4b4f-a65e-8ff83349f54c:
+        information: ruby_on_rails_application_none
+        ask: Missing
+        question:
+            - 148f7855-d2f0-4139-85a1-4c4cb2eb6caa
+    d6a91e16-4483-48f7-9fe9-311f1b9bd7e6:
+        information: spring_application_none
+        ask: Missing
+        question:
+            - d0d3e707-502c-4c82-960f-84e1acf5e5fb
+    bbd073ef-f004-4d53-a944-e62762671212:
+        information: sql_application_none
+        ask: Missing
+        question:
+            - 3e8a9e3a-83a3-4eea-9489-451315d4ae8a
+    c1caf94a-e9ab-4ef8-a08e-3ccb264268e2:
+        information: velocity_application_none
+        ask: Missing
+        question:
+            - 1736b563-aeb1-48c4-9ead-f69be149d11a
+    3377f9a4-295a-48e4-b985-adc7d4190769:
+        information: none_antivirus_none
+        ask: Missing
+        question:
+            - beeee8a7-e5e8-4a0b-b775-bf05f1c5ba06
+    f726f106-6c8f-4ea3-a185-71373ebe7d15:
+        information: none_database_none
+        ask: Missing
+        question:
+            - a76af321-e840-4852-9f7b-bc803b4904e9
+    d6ea114a-a7e3-42c8-8943-0f0d6c24828a:
+        information: The cloud folder
+        ask: Do you need Cloud rule
+        question:
+            - 97175eda-c5a0-45b0-ad6d-42ead89bff46
+            - 4e3952e4-1f9b-4385-a58d-3c56a80afcb7
+            - ad9bf792-f933-4f2f-bebb-3e39e2603cb6
+            - f7e9e2bc-454c-4783-b0c9-061558500ada
+            - b934c15a-d3b4-4254-a502-46c86f20c9ce
+            - fa3b75c2-03b4-4faa-8a13-46490c6dee98
+            - 2172ac1e-d811-4c41-8671-4525a6d7e0f3
+            - e162c99f-17ae-45fd-956f-c7a5668d714c
+            - d688876f-06e2-45e9-a871-0f617b899718
+            - e2ec639c-de7f-465b-9728-738237cce5f7
+    bc174c8d-ab4e-4574-b91d-f2a7483f4bdd:
+        information: qualys_none_none
+        ask: Missing
+        question:
+            - db691150-7e4a-43de-9b17-c50787f6d892
+    7471a80c-9f04-407c-b9ab-5c3fff64741f:
+        information: none_none_netflow
+        ask: Missing
+        question:
+            - 8a086622-a75f-41a4-909c-b4eb70f68e3c
+    847c49ae-dc9b-463b-8440-d9eff20abcb4:
+        information: The linux folder
+        ask: Do you need Linux rules
+        question:
+            - 1c586617-ccef-4274-ab26-a9e707f552eb
+            - 714adc3e-cbdc-4907-a3ee-832357ba2e9e
+            - 92e67a63-b06e-4a62-98a7-b2d7f8891971
+            - c600eb8f-3063-4078-ae8d-e6e6b2438afe
+            - aa15bef2-cae3-4a69-8e8e-a836b7bb73e3
+            - cc79ea62-140d-4acc-8adc-311995446e85
+            - c76bcba4-69ec-406b-bf6b-139cfdceddd3
+            - 1bb4e56c-735e-43c7-94e1-6f96537e9ef3
+            - 7ca7d81e-b301-4674-b86d-756fe73aaedd
+            - 4b0a0a28-4aa1-4353-a977-4f7675df93ae
+            - a020a537-60eb-4ced-9318-c49eb28bc290
+            - 67f33595-a279-4ed6-9f09-bbbf6eafd4ed
+            - 98b6d220-2fdf-4a4c-866c-8956d8eb071f
+    a024558d-47be-4af0-a420-0ecad4537a74:
+        information: The Macos folder
+        ask: Do you need MacOS rules
+        question:
+            - a53c1a1a-91bc-4c77-a07b-cb6d70449a32
+            - e5f54113-2d44-4086-8174-bb0a9ef88803
+    1466a9c7-a041-4aea-a001-075b9904cfcd:
+        information: cisco
+        ask: Do you need Cisco rules
+        question:
+            - cb52601d-5a6d-43b4-8df2-a811d05c1c2a
+            - 3c2d0218-682a-4d13-968c-14a38c51dce5
+            - 0800b8c9-48ee-45b4-8bec-2941c4e0bb01
+            - f0a63bb9-ac4b-4d3b-a18e-9ef2fd2e3d1c
+    6db6db89-24b4-4d7c-a918-7ea515270ae7:
+        information: none_dns_none
+        ask: Missing
+        question:
+            - cd9361fa-cb7a-4918-beb2-5abd716b70ed
+    8b59163a-8551-4692-a432-cd9cdc4a3715:
+        information: none_firewall_none
+        ask: Missing
+        question:
+            - 7c7b90a2-e5cc-4c93-83c2-f232191c7c9f
+    4d514b49-281e-4aac-bcd8-2c2fa824549e:
+        information: huawei_none_bgp
+        ask: Missing
+        question:
+            - 2135561a-f9d1-4f85-953b-c38470389e3a
+    93c726e9-3bcb-4c01-b6d8-5418ded5afd9:
+        information: juniper_none_bgp
+        ask: Missing
+        question:
+            - 2ef3dafb-6466-4efb-8efd-aed876b05e07
+    2baa5340-6676-46e0-8552-716c6164bdd3:
+        information: zeek
+        ask: Do you need Zeek rules
+        question:
+            - 275c68e1-eefc-4bf0-aae8-646b8776a686
+            - fdf678ff-ea70-46f4-8b01-83028d964a38
+            - 1718a67a-0f9c-4ab3-9af8-2db8c5d83bb1
+            - c838de8c-1452-451c-a607-d9dd436c63b7
+            - 415493fa-bccf-4ece-a736-c06d10ee87f2
+            - ecf500be-45f9-4d25-b4d9-874aa1d763b7
+            - 4b351da2-fd2a-4cec-8a78-525e15594b42
+    cf89b3d3-a0fe-4c65-adf9-8a81c9b653a1:
+        information: none_none_apache
+        ask: Missing
+        question:
+            - e4b5017f-368d-404a-a8d9-6df172a01d73
+    c8a98e14-0e09-4385-bec3-92bb7d884d08:
+        information: Proxy and Web serveur
+        ask: Do you need W3C rules (GET,POST,..)
+        question:
+            - f84cc9d6-7c06-41ae-83e8-dfdff56207f0
+            - cce743e8-5b59-4fdc-9f96-ab241a7fa457
