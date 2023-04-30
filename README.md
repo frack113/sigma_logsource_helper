@@ -20,21 +20,27 @@ It is not pretty but it's works
 
 # logsource Yaml 
 
-There are 3 parts in the file
+There are 4 parts in the file
 
 - logsources : all the logsource found in the rules
 - logsource questions : boolean question to take the list of logsource
 - type questions : boolean question to select a list of logsource questions
+- genral questions : boolean question to select a list of type questions
 
 # Todo List
 
-- [ ] check duplicate uuid
-- [ ] check if logsource is deleted ?
-- [ ] check if logsource question use a invalide uuid logsource
+- [ ] check duplicate uuid (with yaml should not be possible)
+- [X] check if logsource no more in the sigma rule (only on update)
 - [X] add question to select a set of logsource question
-- [ ] check if type question use a invalide uuid logsource question
+- [X] check if logsource question use a invalid uuid logsource
+- [X] check if type question use a invalid uuid logsource question
+- [X] check if type question use a invalid uuid type question
 - [ ] correcting spelling errors 
+- [ ] Add cli sigma path option
+- [ ] Add a cli quiz
+- [ ] Add a output of the quiz
 
+Add an editor , but it is a big works to do...
 
 # Details
 
@@ -50,7 +56,7 @@ the logsource are from [Sigma](https://github.com/SigmaHQ/sigma-specification/bl
 in the question section:
 - `information` give some information.  
 - `ask` is the text of the question, I do not think the `?` is usefull here  
-- `logsource` is the list of logsource uuid that you need to use if you answer yes  
+- `uuid_ref` is the list of uuid that you need to use if you answer yes  
 
 
 ## Example for boolean question
@@ -65,7 +71,7 @@ the logsource is `product: windows / category: ps_script` and the simple questio
     06deb6dd-6b00-4500-bf35-c6d300f51104:
         information: windows_ps_script_none
         ask: Do you have enable Script Block Logging
-        logsource:
+        uuid_ref:
             - 2a503beb-86f2-4042-8c45-ce03a9973dd4
 ```
 
@@ -77,18 +83,19 @@ the logsource is `product: linux / service: auditd` and the simple question is `
     b4c9b09d-a5d1-4067-a769-d612dbf756fb:
         information: linux_none_auditd
         ask: Do you have auditd enable with rules
-        logsource:
+        uuid_ref:
             - 574175b5-fe78-4d52-ad54-926968a8a530
 ```
 
 ## Example for type question
 ### Windows Sysmon
+
 With a simple question you can select (or avoid) all questions concerning the sysmon logsource for windows
 ```yaml
     716d9db2-c3bb-4680-ad84-6d52ed2520d6:
         information: select all the Windows Sysmon question
         ask: Do do have sysmon for Windows
-        question:
+        uuid_ref:
             - f92289a0-f979-4ab1-8e5b-ef28af929717
             - d7a550a2-ae07-4b09-b36d-dd23914bd878
             - b6c9289f-3cca-4b09-9d55-fb5c6e722ae7
@@ -111,4 +118,44 @@ With a simple question you can select (or avoid) all questions concerning the sy
             - fe1c7913-3aa8-4ad7-979a-f1949bd2502a
             - 28e6baa8-da8b-4806-813c-c80a7d69a889
             - f5f0efd4-54a6-40c6-a1e6-108f477c4fdb
+```
+
+## Example for General question
+### Linux
+
+With a simple question you can select (or avoid) all questions concerning linux (auditd,sysmon, sudo,...)
+```yaml
+    847c49ae-dc9b-463b-8440-d9eff20abcb4:
+        information: The linux folder
+        ask: Do you need Linux rules
+        uuid_ref:
+            - 1c586617-ccef-4274-ab26-a9e707f552eb
+            - 714adc3e-cbdc-4907-a3ee-832357ba2e9e
+            - 92e67a63-b06e-4a62-98a7-b2d7f8891971
+            - c600eb8f-3063-4078-ae8d-e6e6b2438afe
+            - aa15bef2-cae3-4a69-8e8e-a836b7bb73e3
+            - cc79ea62-140d-4acc-8adc-311995446e85
+            - c76bcba4-69ec-406b-bf6b-139cfdceddd3
+            - 1bb4e56c-735e-43c7-94e1-6f96537e9ef3
+            - 7ca7d81e-b301-4674-b86d-756fe73aaedd
+            - 4b0a0a28-4aa1-4353-a977-4f7675df93ae
+            - a020a537-60eb-4ced-9318-c49eb28bc290
+            - 67f33595-a279-4ed6-9f09-bbbf6eafd4ed
+            - 98b6d220-2fdf-4a4c-866c-8956d8eb071f
+```
+### Zeek
+
+With a simple question you can select (or avoid) all questions concerning Zeek
+```yaml
+    2baa5340-6676-46e0-8552-716c6164bdd3:
+        information: zeek
+        ask: Do you need Zeek rules
+        uuid_ref:
+            - 275c68e1-eefc-4bf0-aae8-646b8776a686
+            - fdf678ff-ea70-46f4-8b01-83028d964a38
+            - 1718a67a-0f9c-4ab3-9af8-2db8c5d83bb1
+            - c838de8c-1452-451c-a607-d9dd436c63b7
+            - 415493fa-bccf-4ece-a736-c06d10ee87f2
+            - ecf500be-45f9-4d25-b4d9-874aa1d763b7
+            - 4b351da2-fd2a-4cec-8a78-525e15594b42
 ```
