@@ -17,8 +17,9 @@ SECTION_QGENERAL_NAME = "question_general"
 class yaml_file:
     def __init__(self, file_name):
         self.yaml_data = {}
-        self.sigma = {}
+        self.reverse_fhash = {}
         self.fhash = []
+        self.sigma_logsource = []
         self.yaml_filename = file_name
 
         self.yaml = YAML()
@@ -48,6 +49,7 @@ class yaml_file:
         for uuid_key in self.yaml_data[SECTION_LOGSOURCE_NAME]:
             fhash = self.__get_fhash(self.yaml_data[SECTION_LOGSOURCE_NAME][uuid_key])
             self.fhash.append(fhash)
+            self.reverse_fhash[fhash]=uuid_key
 
     def read_sigma_file(self, path):
         rules_list = [yml for yml in pathlib.Path(path).glob("**/*.yml")]
@@ -71,7 +73,7 @@ class yaml_file:
                 )
                 the_fhash = f"{product}_{category}_{service}"
                 if the_fhash in self.fhash:
-                    pass
+                    self.sigma_logsource.append(self.reverse_fhash[the_fhash])
                 else:
                     new_uuid4 = str(uuid.uuid4())
                     self.fhash.append(the_fhash)
@@ -86,6 +88,19 @@ class yaml_file:
                     self.yaml_data[SECTION_LOGSOURCE_NAME][new_uuid4]["service"] = (
                         None if service == "nome" else service
                     )
+                    self.reverse_fhash[the_fhash] = new_uuid4
+                    self.sigma_logsource.append(new_uuid4)
+
+    def clean_logsource(self):
+        rm_uuid = []
+
+        for uuid in self.yaml_data[SECTION_LOGSOURCE_NAME]:
+            if uuid not in self.sigma_logsource:
+                print(f'Logsource {uuid} no more used')
+                rm_uuid.append(uuid)
+
+        for uuid in rm_uuid:
+            del self.yaml_data[SECTION_LOGSOURCE_NAME][uuid]
 
     def get_number_default_question(self, section: str, default_ask: str) -> int:
         int_q = 0
@@ -95,16 +110,11 @@ class yaml_file:
         return int_q
 
     def __create_missing_question(
-        self, section_name: str, section_ref: str, default_ask: str, sigma: bool
+        self, section_name: str, section_ref: str, default_ask: str
     ):
-        if sigma:
-            uuid_from = "logsource"
-        else:
-            uuid_from = "question"
-
         uuid_done = []
         for uuid_key in self.yaml_data[section_name]:
-            for uuid_logsource in self.yaml_data[section_name][uuid_key][uuid_from]:
+            for uuid_logsource in self.yaml_data[section_name][uuid_key]['uuid_ref']:
                 uuid_done.append(uuid_logsource)
 
         for uuid_key in self.yaml_data[section_ref]:
@@ -120,30 +130,59 @@ class yaml_file:
                 self.yaml_data[section_name][new_uuid4] = {}
                 self.yaml_data[section_name][new_uuid4]["information"] = information
                 self.yaml_data[section_name][new_uuid4]["ask"] = default_ask
-                self.yaml_data[section_name][new_uuid4][uuid_from] = [uuid_key]
+                self.yaml_data[section_name][new_uuid4]['uuid_ref'] = [uuid_key]
                 uuid_done.append(uuid_key)
                 print(f"Missing question for {information} add with uuid {new_uuid4}")
 
     def create_all_missing_question(self, missing_ask: str):
-        self.__create_missing_question(
-            section_name=SECTION_QLOGSOURCE_NAME,
-            section_ref=SECTION_LOGSOURCE_NAME,
-            default_ask=missing_ask,
-            sigma=True,
-        )
-        self.__create_missing_question(
-            section_name=SECTION_QTYPE_NAME,
-            section_ref=SECTION_QLOGSOURCE_NAME,
-            default_ask=missing_ask,
-            sigma=False,
-        )
-        self.__create_missing_question(
-            section_name=SECTION_QGENERAL_NAME,
-            section_ref=SECTION_QTYPE_NAME,
-            default_ask=missing_ask,
-            sigma=False,
-        )
+        print(f'Working on {SECTION_QLOGSOURCE_NAME} section')
+        self.__create_missing_question(SECTION_QLOGSOURCE_NAME,SECTION_LOGSOURCE_NAME,missing_ask)
 
+        print(f'Working on {SECTION_QTYPE_NAME} section')
+        self.__create_missing_question(SECTION_QTYPE_NAME,SECTION_QLOGSOURCE_NAME,missing_ask)
+
+        print(f'Working on {SECTION_QGENERAL_NAME} section')
+        self.__create_missing_question(SECTION_QGENERAL_NAME,SECTION_QTYPE_NAME,missing_ask)
+
+    def __clean_question_invalid_uuid_ref(self, section_name: str, section_ref: str):
+        rm_question = []
+
+        for uuid_key in self.yaml_data[section_name]:
+            change = False
+            list_uuid = []
+            for uuid_ref in self.yaml_data[section_name][uuid_key]['uuid_ref']:
+                if uuid_ref not in self.yaml_data[section_ref]:
+                    change = True
+                else:
+                    list_uuid.append(uuid_ref)
+            if change:
+                if len(list_uuid) == 0 :
+                    rm_question.append(uuid_key)
+                else:
+                    self.yaml_data[section_name][uuid_key]['uuid_ref'] = list_uuid
+
+        if len(rm_question)>0:
+            for uuid in rm_question:
+                del self.yaml_data[section_name][uuid]
+                print(f'Remove invalid question {uuid}')
+
+    def clean_all_question_invalid_uuid_ref(self):
+        print(f'Working on {SECTION_QLOGSOURCE_NAME} section')
+        self.__clean_question_invalid_uuid_ref(SECTION_QLOGSOURCE_NAME,SECTION_LOGSOURCE_NAME)
+        print(f'Working on {SECTION_QTYPE_NAME} section')
+        self.__clean_question_invalid_uuid_ref(SECTION_QTYPE_NAME,SECTION_QLOGSOURCE_NAME)
+        print(f'Working on {SECTION_QGENERAL_NAME} section')
+        self.__clean_question_invalid_uuid_ref(SECTION_QGENERAL_NAME,SECTION_QTYPE_NAME)
+
+class quiz:
+    def __init__(self):
+        pass
+
+    def question(self,text)->bool:
+        answer = input(f"{text} [y/N] ?")
+        if answer.lower() == "y":
+            return True
+        return False 
 
 def set_argparser():
     argparser = argparse.ArgumentParser(
@@ -171,12 +210,18 @@ def main():
 
     if cmdargs.update:
         print("Load sigma rules")
+        # need to add --sigma option :)
         logsource.read_sigma_file("../../sigma/rules")
         logsource.read_sigma_file("../../sigma/rules-emerging-threats")
         logsource.read_sigma_file("../../sigma/rules-threat-hunting")
+        logsource.clean_logsource()
 
         print("Check missing question")
         logsource.create_all_missing_question("Missing")
+
+        print("Check invalid uuid")
+        logsource.clean_all_question_invalid_uuid_ref()
+
 
         print("Save the yaml database with no backup :)")
         logsource.save()
