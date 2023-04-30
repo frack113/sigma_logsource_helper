@@ -32,9 +32,9 @@ There are 4 parts in the file
 - [ ] check duplicate uuid (with yaml should not be possible)
 - [ ] check if logsource is deleted ?
 - [X] add question to select a set of logsource question
-- [ ] check if logsource question use a invalide uuid logsource
-- [ ] check if type question use a invalide uuid logsource question
-- [ ] check if type question use a invalide uuid type question
+- [ ] check if logsource question use a invalid uuid logsource
+- [ ] check if type question use a invalid uuid logsource question
+- [ ] check if type question use a invalid uuid type question
 - [ ] correcting spelling errors 
 
 Add an editor , but it is a big works to do...
