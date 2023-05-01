@@ -673,87 +673,87 @@ questions_logsources:
             - 597a5a3a-2cee-4064-bf0f-7a22f35b1e2c
     2bef0459-8ea6-4c1f-8726-45ad1bce05bf:
         information: macos_file_event_none
-        ask: Missing
+        ask: Do you have like Sysmon EID 11 event
         uuid_ref:
             - 864d24e3-f55c-4dc6-967e-4453f75c90b2
     d8244fd8-239a-4796-bff6-02e6d0333aaa:
         information: macos_process_creation_none
-        ask: Missing
+        ask: Do you have like Sysmon EID 1 event
         uuid_ref:
             - b6d283a0-59e1-4bf9-952d-35728c31e8b9
     98167a02-0c62-49b7-a5a5-fc49ea1aa9e6:
         information: cisco_accounting_aaa
-        ask: Missing
+        ask: Do you have cisco Authentication Authorization and Accounting log
         uuid_ref:
             - 8e881b75-4d3d-4fe7-bf3f-71428e1167f3
     70f475f3-5cfc-4f4d-b0aa-549a2e0808e4:
         information: cisco_none_aaa
-        ask: Missing
+        ask: Do you have cisco Authentication Authorization and Accounting log
         uuid_ref:
             - c9d3b39f-4983-4d1a-bf6d-611e6cd9a19a
     71d55a99-1289-4600-8340-e608291fbf11:
         information: cisco_none_bgp
-        ask: Missing
+        ask: Do you have cisco BGP log
         uuid_ref:
             - b8aa6586-764a-4640-a3fe-024140cce597
     f72b5f1e-66f5-4662-a7c0-2ad75773328b:
         information: cisco_none_ldp
-        ask: Missing
+        ask: Do you have cisco LDP log
         uuid_ref:
             - 7c8fe139-487e-46e5-878e-f33018f55bc4
     124e087b-b91f-4048-bac5-89c4810160de:
         information: none_dns_none
-        ask: Missing
+        ask: Do you have cisco DNS log
         uuid_ref:
             - dc4afbc9-7b1d-4337-8329-6ab7b2db6b08
     8b31315b-e222-443a-a625-b4ff44274fa9:
         information: none_firewall_none
-        ask: Missing
+        ask: Do you have firewall filtering log
         uuid_ref:
             - b1b50bb8-457f-4f1b-a4c6-ba0823323d3a
     90f214ea-d51b-4457-9653-31c558f5cb39:
         information: huawei_none_bgp
-        ask: Missing
+        ask: Do you have the huawei bgp log
         uuid_ref:
             - e613739d-a8d3-4acf-80e2-58a7b8a01541
     864b110b-5b90-4f44-b41d-eb725287b011:
         information: juniper_none_bgp
-        ask: Missing
+        ask: Do you have the juniper bgp log
         uuid_ref:
             - 9b346ca7-f2a1-4cb4-8c35-eed7e3c00c0a
     4b9e2a18-6629-4ca0-8981-924839ef670f:
         information: zeek_none_dce_rpc
-        ask: Missing
+        ask: Do you have Zeek dce rpc log
         uuid_ref:
             - 6dce903b-98f0-401d-bbf4-31da1ad89d12
     7c0e7b95-773a-4e0a-b622-df05db6076d1:
         information: zeek_none_smb_files
-        ask: Missing
+        ask: Do you have Zeek smb log
         uuid_ref:
             - 3899b7e3-86a3-4b2e-8796-978a7ccdf975
     a251c8d3-dcea-49d8-802d-4ad2c1929377:
         information: zeek_none_x509
-        ask: Missing
+        ask: Do you have Zeek x509 log
         uuid_ref:
             - b23e2e30-2c63-4283-b4b2-ccd1aac0933f
     2fcea2d2-2e5c-4c73-9c3a-0477e5fefaaa:
         information: zeek_none_dns
-        ask: Missing
+        ask: Do you have Zeek dns log
         uuid_ref:
             - 88aec8d0-2c00-44ff-a920-3582719c3d7e
     c8036ea4-f41e-4b6e-9645-849e233a57d5:
         information: zeek_none_http
-        ask: Missing
+        ask: Do you have Zeek http log
         uuid_ref:
             - 80442537-63af-47b0-8ade-5d4ded718ec1
     19be66fd-d524-4ab1-891c-ebfd4ae5d102:
         information: zeek_none_rdp
-        ask: Missing
+        ask: Do you have Zeek rdp log
         uuid_ref:
             - a4e5fe33-a360-416c-8829-eb531d8b3dd8
     9e308780-d4bf-48af-8f6c-36d7c8e64829:
         information: zeek_none_kerberos
-        ask: Missing
+        ask: Do you have Zeek kerberos log
         uuid_ref:
             - 1ee4fb67-f7b3-4bed-8778-950e6e71bb56
     4a5d330f-5d0a-427e-9d7f-da16c23369c8:
@@ -773,7 +773,7 @@ questions_logsources:
             - 73965e93-11ea-4faa-bea1-8bf4b75c2d6e
     7178d4ca-bddc-40ab-b970-9937e7cc615d:
         information: windows_none_iis
-        ask: Missing
+        ask: Do you have IIS  W3C log
         uuid_ref:
             - 5ab25500-4785-40d7-b07d-c8a177c61184
     55cf1449-5508-4475-8986-9a0a6cd12e14:
@@ -911,7 +911,7 @@ questions_logsources:
             - 2181dc25-4623-467f-91f9-dd6ff0fc963f
     1fc29f1f-4cf4-429a-b2c4-2af4e39f988e:
         information: windows_none_smbclient-connectivity
-        ask: Missing
+        ask: Do you have enable Microsoft-Windows-SMBClient/Connectivity
         uuid_ref:
             - 05388908-6d27-440a-b062-70f7efce6523
     7e11fe62-8103-42b5-a0ab-6698d48ec4bc:
@@ -1080,15 +1080,14 @@ questions_logsources:
             - bff81fba-1eb2-432a-9ffc-ab68492731fc
 questions_type:
     716d9db2-c3bb-4680-ad84-6d52ed2520d6:
-        information: select all the Windows sysmon event
-        ask: Do do have sysmon for Windows
+        information: select all the Windows Sysmon event
+        ask: Do do have sysmon for Windows or same event
         uuid_ref:
             - f92289a0-f979-4ab1-8e5b-ef28af929717
             - d7a550a2-ae07-4b09-b36d-dd23914bd878
             - b6c9289f-3cca-4b09-9d55-fb5c6e722ae7
             - c535be75-cfe5-49fd-b42a-9d7033d8f5fc
             - a1a0f2bd-3ac5-4968-8d0e-be9ec823cd44
-            - 021eb6a5-da13-4bff-9666-4c4d69785048
             - fa880187-bf82-4a84-bfc7-7045b3933edd
             - f741e3bb-2d53-4f4a-9c72-3050ad815aa3
             - 0cfba4a8-fa88-4feb-8780-002f2e7cdd07
@@ -1113,47 +1112,47 @@ questions_type:
             - 06deb6dd-6b00-4500-bf35-c6d300f51104
     c19d1497-317f-424e-a378-d6c9af2c789b:
         information: django_application_none
-        ask: Missing
+        ask: Do you use Django
         uuid_ref:
             - 716d9db2-c3bb-4680-ad84-6d52ed2520d6
     2670153d-cfcf-44a1-a308-71823b99dc71:
         information: jvm_application_none
-        ask: Missing
+        ask: Do you use Java Virtual Machine
         uuid_ref:
             - c02c7e05-48e4-4680-a2f4-9232d65f504e
     8ca02866-d082-4616-b1b0-ea5518d90cff:
         information: nodejs_application_none
-        ask: Missing
+        ask: Do you use NodeJs
         uuid_ref:
             - 5e1d3bfc-b836-463e-b23d-b37d7569908f
     6e40007f-42e7-41ac-9e4a-f92a97bd926b:
         information: python_application_none
-        ask: Missing
+        ask: Do you use Python
         uuid_ref:
             - b125078b-9134-4f85-a755-5ec912c8b9fa
     84afd37b-0efe-4076-9527-8b2690b5a628:
         information: rpc_firewall_application_none
-        ask: Missing
+        ask: Do you use RPC Firewall
         uuid_ref:
             - b5172c5c-671f-41d9-b814-4848e16b2760
     148f7855-d2f0-4139-85a1-4c4cb2eb6caa:
         information: ruby_on_rails_application_none
-        ask: Missing
+        ask: Do you use  Ruby on Rails
         uuid_ref:
             - f69d1d34-d600-45c9-9f97-535ffd37b96c
     d0d3e707-502c-4c82-960f-84e1acf5e5fb:
         information: spring_application_none
-        ask: Missing
+        ask: Do you use Spring
         uuid_ref:
             - 6c1eee05-663c-4ed1-b6bd-aead169916ad
     3e8a9e3a-83a3-4eea-9489-451315d4ae8a:
         information: sql_application_none
-        ask: Missing
+        ask: Do you use Sql engine
         uuid_ref:
             - 5ceb59c0-5916-4886-ba34-70131e745fd0
     1736b563-aeb1-48c4-9ead-f69be149d11a:
         information: velocity_application_none
-        ask: Missing
+        ask: Do you use Velocity
         uuid_ref:
             - 6598a05d-ea08-4c45-a84b-fda2a19e0e15
     beeee8a7-e5e8-4a0b-b775-bf05f1c5ba06:
@@ -1259,7 +1258,7 @@ questions_type:
             - d8244fd8-239a-4796-bff6-02e6d0333aaa
     cb52601d-5a6d-43b4-8df2-a811d05c1c2a:
         information: cisco
-        ask: Do you use cisco
+        ask: Do you use Cisco network hardware
         uuid_ref:
             - 98167a02-0c62-49b7-a5a5-fc49ea1aa9e6
             - 70f475f3-5cfc-4f4d-b0aa-549a2e0808e4
@@ -1267,82 +1266,58 @@ questions_type:
             - f72b5f1e-66f5-4662-a7c0-2ad75773328b
     cd9361fa-cb7a-4918-beb2-5abd716b70ed:
         information: none_dns_none
-        ask: Missing
+        ask: Do you use a DNS server
         uuid_ref:
             - 124e087b-b91f-4048-bac5-89c4810160de
     7c7b90a2-e5cc-4c93-83c2-f232191c7c9f:
         information: none_firewall_none
-        ask: Missing
+        ask: Do you use a firewall
         uuid_ref:
             - 8b31315b-e222-443a-a625-b4ff44274fa9
     2135561a-f9d1-4f85-953b-c38470389e3a:
         information: huawei_none_bgp
-        ask: Missing
+        ask: Do you use huawei network hardware
         uuid_ref:
             - 90f214ea-d51b-4457-9653-31c558f5cb39
     2ef3dafb-6466-4efb-8efd-aed876b05e07:
         information: juniper_none_bgp
-        ask: Missing
+        ask: Do you use Juniper network hardware
         uuid_ref:
             - 864b110b-5b90-4f44-b41d-eb725287b011
     275c68e1-eefc-4bf0-aae8-646b8776a686:
-        information: zeek_none_dce_rpc
-        ask: Missing
+        information: Zeek is an Open Source Network Security Monitoring Tool
+        ask: Do you use zeek
         uuid_ref:
             - 4b9e2a18-6629-4ca0-8981-924839ef670f
-    fdf678ff-ea70-46f4-8b01-83028d964a38:
-        information: zeek_none_smb_files
-        ask: Missing
-        uuid_ref:
             - 7c0e7b95-773a-4e0a-b622-df05db6076d1
-    1718a67a-0f9c-4ab3-9af8-2db8c5d83bb1:
-        information: zeek_none_x509
-        ask: Missing
-        uuid_ref:
             - a251c8d3-dcea-49d8-802d-4ad2c1929377
-    c838de8c-1452-451c-a607-d9dd436c63b7:
-        information: zeek_none_dns
-        ask: Missing
-        uuid_ref:
             - 2fcea2d2-2e5c-4c73-9c3a-0477e5fefaaa
-    415493fa-bccf-4ece-a736-c06d10ee87f2:
-        information: zeek_none_http
-        ask: Missing
-        uuid_ref:
             - c8036ea4-f41e-4b6e-9645-849e233a57d5
-    ecf500be-45f9-4d25-b4d9-874aa1d763b7:
-        information: zeek_none_rdp
-        ask: Missing
-        uuid_ref:
             - 19be66fd-d524-4ab1-891c-ebfd4ae5d102
-    4b351da2-fd2a-4cec-8a78-525e15594b42:
-        information: zeek_none_kerberos
-        ask: Missing
-        uuid_ref:
             - 9e308780-d4bf-48af-8f6c-36d7c8e64829
     e4b5017f-368d-404a-a8d9-6df172a01d73:
         information: none_none_apache
-        ask: Missing
+        ask: Do you use an Apache Server
         uuid_ref:
             - 4a5d330f-5d0a-427e-9d7f-da16c23369c8
     f84cc9d6-7c06-41ae-83e8-dfdff56207f0:
         information: none_proxy_none
-        ask: Missing
+        ask: Do you have a Proxy server W3C
         uuid_ref:
             - 173d60e4-5034-4c09-b7f3-a06485e5ee50
     cce743e8-5b59-4fdc-9f96-ab241a7fa457:
         information: none_webserver_none
-        ask: Missing
+        ask: Do you have a Web server W3C
         uuid_ref:
             - 57392727-cc74-48d3-8065-9e4b0269f5e3
     0e614bae-308b-4adc-8d41-b1d5a7e62f4d:
-        information: windows_none_iis
-        ask: Missing
+        information: Need to be check
+        ask: Do you use IIS web log
         uuid_ref:
             - 7178d4ca-bddc-40ab-b970-9937e7cc615d
     849908ca-1bb4-4fbb-9a14-2cf39ca14bd3:
         information: windows_none_none
-        ask: Missing
+        ask: Do you use any log on a Windows
         uuid_ref:
             - 55cf1449-5508-4475-8986-9a0a6cd12e14
     849d846a-cb70-47a1-bb08-0bcb39a7b6fd:
@@ -1386,10 +1361,11 @@ questions_type:
             - 28030d23-5cc6-43e0-a48b-af771e47179d
             - ba6d09dc-5e5d-4a2e-883b-2c4a110d5a3f
     d4635c67-a489-49c8-8c6c-3d35c7bcf1f7:
-        information: windows_file_rename_none
-        ask: Missing
+        information: file_rename and file_access
+        ask: Do you use ETW event
         uuid_ref:
             - f67355ad-0cff-474b-a9d6-4fe854330b59
+            - 021eb6a5-da13-4bff-9666-4c4d69785048
 question_general:
     0a613fec-b411-45c0-a7f1-5a935fd65437:
         information: select all the Windows sysmon event
@@ -1464,12 +1440,6 @@ question_general:
             - 2135561a-f9d1-4f85-953b-c38470389e3a
             - 2ef3dafb-6466-4efb-8efd-aed876b05e07
             - 275c68e1-eefc-4bf0-aae8-646b8776a686
-            - fdf678ff-ea70-46f4-8b01-83028d964a38
-            - 1718a67a-0f9c-4ab3-9af8-2db8c5d83bb1
-            - c838de8c-1452-451c-a607-d9dd436c63b7
-            - 415493fa-bccf-4ece-a736-c06d10ee87f2
-            - ecf500be-45f9-4d25-b4d9-874aa1d763b7
-            - 4b351da2-fd2a-4cec-8a78-525e15594b42
     c8a98e14-0e09-4385-bec3-92bb7d884d08:
         information: Proxy and Web serveur
         ask: Do you need W3C rules (GET,POST,..)
