@@ -703,7 +703,7 @@ questions_logsources:
             - 7c8fe139-487e-46e5-878e-f33018f55bc4
     124e087b-b91f-4048-bac5-89c4810160de:
         information: none_dns_none
-        ask: Do you have cisco DNS log
+        ask: Do you have DNS log
         uuid_ref:
             - dc4afbc9-7b1d-4337-8329-6ab7b2db6b08
     8b31315b-e222-443a-a625-b4ff44274fa9:

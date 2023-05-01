@@ -178,13 +178,13 @@ class quiz:
     def __init__(self):
         pass
 
-    def question(self,text)->bool:
+    def question(self,text:str)->bool:
         answer = input(f"{text} [y/N] ? ")
         if answer.lower() == "y":
             return True
         return False 
 
-    def section_quiz(self,data,ref) -> list:
+    def section_quiz(self,data,ref:list) -> list:
         if len(ref) == 0:
             ref= list(data.keys())
         uuid_select =[]
@@ -193,6 +193,15 @@ class quiz:
                uuid_select.extend(data[askme]['uuid_ref']) 
 
         return uuid_select
+    
+    def save_selection_csv(self,filename:str,uuid_list:list,data):
+        with open(filename, "w", encoding="UTF-8", newline="") as file_out:
+            file_out.write("uuid,product,category,service\n")
+            for lg in uuid_list:
+                lg_str = f"{lg},{data[lg]['product']},{data[lg]['category']},{data[lg]['service']}\n"
+                lg_str = lg_str.replace(',none',',')
+                file_out.write(lg_str)
+
 
 def set_argparser():
     argparser = argparse.ArgumentParser(
@@ -301,6 +310,8 @@ def main():
         if len(q_log) == 0 :
             print("Noting to do , bye")
             exit(0)
+
+        myquiz.save_selection_csv('select.csv',q_log,logsource.yaml_data[SECTION_LOGSOURCE_NAME])
 
 if __name__ == "__main__":
     main()
