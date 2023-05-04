@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1095</width>
+    <height>788</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Sigma Logsource Helper</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="Quizz">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>1061</width>
+      <height>731</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="question1">
+     <attribute name="title">
+      <string>Stage 1</string>
+     </attribute>
+     <widget class="QPushButton" name="valide_1">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>650</y>
+        <width>131</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string> Valide choice</string>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="list_q1">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>1031</width>
+        <height>631</height>
+       </rect>
+      </property>
+      <property name="locale">
+       <locale language="French" country="France"/>
+      </property>
+      <property name="dragDropMode">
+       <enum>QAbstractItemView::NoDragDrop</enum>
+      </property>
+      <property name="selectionMode">
+       <enum>QAbstractItemView::MultiSelection</enum>
+      </property>
+      <property name="viewMode">
+       <enum>QListView::ListMode</enum>
+      </property>
+      <property name="modelColumn">
+       <number>0</number>
+      </property>
+      <property name="uniformItemSizes">
+       <bool>true</bool>
+      </property>
+      <property name="itemAlignment">
+       <set>Qt::AlignLeading</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="question2">
+     <attribute name="title">
+      <string>Stage 2</string>
+     </attribute>
+     <widget class="QPushButton" name="valide_2">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>660</y>
+        <width>131</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Validate choice</string>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="list_q2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>1031</width>
+        <height>641</height>
+       </rect>
+      </property>
+      <property name="locale">
+       <locale language="French" country="France"/>
+      </property>
+      <property name="dragDropMode">
+       <enum>QAbstractItemView::NoDragDrop</enum>
+      </property>
+      <property name="selectionMode">
+       <enum>QAbstractItemView::MultiSelection</enum>
+      </property>
+      <property name="viewMode">
+       <enum>QListView::ListMode</enum>
+      </property>
+      <property name="modelColumn">
+       <number>0</number>
+      </property>
+      <property name="uniformItemSizes">
+       <bool>true</bool>
+      </property>
+      <property name="itemAlignment">
+       <set>Qt::AlignLeading</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="question3">
+     <attribute name="title">
+      <string>Stage 3</string>
+     </attribute>
+     <widget class="QListWidget" name="list_q3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>1031</width>
+        <height>641</height>
+       </rect>
+      </property>
+      <property name="locale">
+       <locale language="French" country="France"/>
+      </property>
+      <property name="dragDropMode">
+       <enum>QAbstractItemView::NoDragDrop</enum>
+      </property>
+      <property name="selectionMode">
+       <enum>QAbstractItemView::MultiSelection</enum>
+      </property>
+      <property name="viewMode">
+       <enum>QListView::ListMode</enum>
+      </property>
+      <property name="modelColumn">
+       <number>0</number>
+      </property>
+      <property name="uniformItemSizes">
+       <bool>true</bool>
+      </property>
+      <property name="itemAlignment">
+       <set>Qt::AlignLeading</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="valide_3">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>660</y>
+        <width>131</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Validate choice</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="logsource">
+     <attribute name="title">
+      <string>Logsource</string>
+     </attribute>
+     <widget class="QTableWidget" name="tableWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>1031</width>
+        <height>671</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
