@@ -233,9 +233,9 @@ def main():
     if cmdargs.update:
         print("Load sigma rules")
         # need to add --sigma option :)
-        logsource.read_sigma_file("../../sigma/rules")
-        logsource.read_sigma_file("../../sigma/rules-emerging-threats")
-        logsource.read_sigma_file("../../sigma/rules-threat-hunting")
+        logsource.read_sigma_file("../sigma/rules")
+        logsource.read_sigma_file("../sigma/rules-emerging-threats")
+        logsource.read_sigma_file("../sigma/rules-threat-hunting")
         logsource.clean_logsource()
 
         print("Check missing question")

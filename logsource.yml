@@ -163,10 +163,6 @@ logsources:
         product: macos
         category: process_creation
         service: none
-    8e881b75-4d3d-4fe7-bf3f-71428e1167f3:
-        product: cisco
-        category: accounting
-        service: aaa
     c9d3b39f-4983-4d1a-bf6d-611e6cd9a19a:
         product: cisco
         category: none
@@ -235,10 +231,6 @@ logsources:
         product: none
         category: webserver
         service: none
-    5ab25500-4785-40d7-b07d-c8a177c61184:
-        product: windows
-        category: none
-        service: iis
     73892606-c0f3-4a4c-ad78-e4ff011389fb:
         product: windows
         category: none
@@ -487,6 +479,26 @@ logsources:
         product: windows
         category: wmi_event
         service: none
+    e2df15f2-1299-4a63-a7fb-8fd6670313f6:
+        product: azure
+        category: none
+        service: riskdetection
+    5fd38fdb-3758-4c9b-a0b1-45160fc3545e:
+        product: azure
+        category: none
+        service: pim
+    a736d5ad-1fe4-498e-b56a-5604f536453c:
+        product: none
+        category: none
+        service: nginx
+    d8f74ae7-f138-4199-86f5-ca87a07f9202:
+        product: windows
+        category: none
+        service: capi2
+    f88cfa2a-5c2f-4226-a221-08c7a06d9ae8:
+        product: windows
+        category: none
+        service: certificateservicesclient-lifecycle-system
 questions_logsources:
     716d9db2-c3bb-4680-ad84-6d52ed2520d6:
         information: django_application_none
@@ -681,11 +693,6 @@ questions_logsources:
         ask: Do you have like Sysmon EID 1 event
         uuid_ref:
             - b6d283a0-59e1-4bf9-952d-35728c31e8b9
-    98167a02-0c62-49b7-a5a5-fc49ea1aa9e6:
-        information: cisco_accounting_aaa
-        ask: Do you have cisco Authentication Authorization and Accounting log
-        uuid_ref:
-            - 8e881b75-4d3d-4fe7-bf3f-71428e1167f3
     70f475f3-5cfc-4f4d-b0aa-549a2e0808e4:
         information: cisco_none_aaa
         ask: Do you have cisco Authentication Authorization and Accounting log
@@ -771,11 +778,6 @@ questions_logsources:
         ask: Do you have the W3C log of the web server
         uuid_ref:
             - 73965e93-11ea-4faa-bea1-8bf4b75c2d6e
-    7178d4ca-bddc-40ab-b970-9937e7cc615d:
-        information: windows_none_iis
-        ask: Do you have IIS  W3C log
-        uuid_ref:
-            - 5ab25500-4785-40d7-b07d-c8a177c61184
     55cf1449-5508-4475-8986-9a0a6cd12e14:
         information: windows_none_none
         ask: Do you have any windows channel
@@ -1078,6 +1080,31 @@ questions_logsources:
         ask: Do you have Microsoft-Windows-Sysmon EID 19,20 or 21 rules
         uuid_ref:
             - bff81fba-1eb2-432a-9ffc-ab68492731fc
+    b25de548-743f-4f80-b3e6-fc1365261002:
+        information: azure_none_riskdetection
+        ask: Do you use Azure riskdetectino log
+        uuid_ref:
+            - e2df15f2-1299-4a63-a7fb-8fd6670313f6
+    f27e9543-fe56-46fd-be35-ef13e7c8b1d0:
+        information: azure_none_pim
+        ask: Do you use Azure pim log
+        uuid_ref:
+            - 5fd38fdb-3758-4c9b-a0b1-45160fc3545e
+    1944700d-8414-4140-8f15-7e6a7d143ecf:
+        information: none_none_nginx
+        ask: Do you have NGinx core logs
+        uuid_ref:
+            - a736d5ad-1fe4-498e-b56a-5604f536453c
+    9a79a4cb-0e64-4c17-9144-e1737633fd87:
+        information: windows_none_capi2
+        ask: Do you have enable Microsoft-Windows-CAPI2/Operational
+        uuid_ref:
+            - d8f74ae7-f138-4199-86f5-ca87a07f9202
+    e53e73ad-9c41-487a-97aa-683b5205db4b:
+        information: windows_none_certificateservicesclient-lifecycle-system
+        ask: Do you have anable Microsoft-Windows-CertificateServicesClient-Lifecycle-System/Operational
+        uuid_ref:
+            - f88cfa2a-5c2f-4226-a221-08c7a06d9ae8
 questions_type:
     716d9db2-c3bb-4680-ad84-6d52ed2520d6:
         information: select all the Windows Sysmon event
@@ -1260,7 +1287,6 @@ questions_type:
         information: cisco
         ask: Do you use Cisco network hardware
         uuid_ref:
-            - 98167a02-0c62-49b7-a5a5-fc49ea1aa9e6
             - 70f475f3-5cfc-4f4d-b0aa-549a2e0808e4
             - 71d55a99-1289-4600-8340-e608291fbf11
             - f72b5f1e-66f5-4662-a7c0-2ad75773328b
@@ -1310,11 +1336,6 @@ questions_type:
         ask: Do you have a Web server W3C
         uuid_ref:
             - 57392727-cc74-48d3-8065-9e4b0269f5e3
-    0e614bae-308b-4adc-8d41-b1d5a7e62f4d:
-        information: Need to be check
-        ask: Do you use IIS web log
-        uuid_ref:
-            - 7178d4ca-bddc-40ab-b970-9937e7cc615d
     849908ca-1bb4-4fbb-9a14-2cf39ca14bd3:
         information: windows_none_none
         ask: Do you use any log on a Windows
@@ -1366,6 +1387,31 @@ questions_type:
         uuid_ref:
             - f67355ad-0cff-474b-a9d6-4fe854330b59
             - 021eb6a5-da13-4bff-9666-4c4d69785048
+    e8bb6717-2e1f-4ca6-9207-741df077fd3f:
+        information: azure_none_riskdetection
+        ask: Do you have the AZURE riskdetection
+        uuid_ref:
+            - b25de548-743f-4f80-b3e6-fc1365261002
+    feada03d-a25b-45c6-bffc-affcf15e5f8e:
+        information: azure_none_pim
+        ask: Do you have the AZURE pim logs
+        uuid_ref:
+            - f27e9543-fe56-46fd-be35-ef13e7c8b1d0
+    437660be-2954-4445-a17b-57ff1e21257a:
+        information: none_none_nginx
+        ask: Do you have a NGINX Serveur
+        uuid_ref:
+            - 1944700d-8414-4140-8f15-7e6a7d143ecf
+    a51ae8af-c6ba-4d4a-b360-34b191e20a16:
+        information: windows_none_capi2
+        ask: Do you have enable  Microsoft-Windows-CAPI2/Operational
+        uuid_ref:
+            - 9a79a4cb-0e64-4c17-9144-e1737633fd87
+    d68f1f75-85f7-4d27-93ba-475cd93c34df:
+        information: windows_none_certificateservicesclient-lifecycle-system
+        ask: Do you have enable Microsoft-Windows-CertificateServicesClient-Lifecycle-System/Operational
+        uuid_ref:
+            - e53e73ad-9c41-487a-97aa-683b5205db4b
 question_general:
     0a613fec-b411-45c0-a7f1-5a935fd65437:
         information: select all the Windows sysmon event
@@ -1373,11 +1419,12 @@ question_general:
         uuid_ref:
             - 716d9db2-c3bb-4680-ad84-6d52ed2520d6
             - 0d1335b1-da48-4147-b212-1f503289c2a1
-            - 0e614bae-308b-4adc-8d41-b1d5a7e62f4d
             - 849908ca-1bb4-4fbb-9a14-2cf39ca14bd3
             - 849d846a-cb70-47a1-bb08-0bcb39a7b6fd
             - deff6530-18da-4e2a-9537-7e09269f8c32
             - d4635c67-a489-49c8-8c6c-3d35c7bcf1f7
+            - d68f1f75-85f7-4d27-93ba-475cd93c34df
+            - a51ae8af-c6ba-4d4a-b360-34b191e20a16
     15aa5c87-dbab-44c5-9495-f0d30b3b3e4b:
         information: Application folder
         ask: Do you need application rules
@@ -1410,6 +1457,8 @@ question_general:
             - fa3b75c2-03b4-4faa-8a13-46490c6dee98
             - d688876f-06e2-45e9-a871-0f617b899718
             - e2ec639c-de7f-465b-9728-738237cce5f7
+            - e8bb6717-2e1f-4ca6-9207-741df077fd3f
+            - feada03d-a25b-45c6-bffc-affcf15e5f8e
     bc174c8d-ab4e-4574-b91d-f2a7483f4bdd:
         information: Whell
         ask: Do you need compliance rules
@@ -1446,3 +1495,8 @@ question_general:
         uuid_ref:
             - f84cc9d6-7c06-41ae-83e8-dfdff56207f0
             - cce743e8-5b59-4fdc-9f96-ab241a7fa457
+    9bfd4f9c-b761-4b5c-bcb6-bb5f8682e9a5:
+        information: none_none_nginx
+        ask: Do you have a NGINX Serveur
+        uuid_ref:
+            - 437660be-2954-4445-a17b-57ff1e21257a
